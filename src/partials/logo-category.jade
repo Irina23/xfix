@@ -1,0 +1,48 @@
+mixin itemBrand (img, name, url)
+    .item
+        .image-holder
+            a(href= url )
+                img(src= img alt= name)
+.block_brand
+    .container
+        .list_brand.inline-layout.col-8
+            +itemBrand(
+            'img/content/Sony_logo.png',
+            'Sony',
+            '#'
+            )
+            +itemBrand(
+            'img/content/Nokia_wordmark.png',
+            'Nokia',
+            '#'
+            )
+            +itemBrand(
+            'img/content/apple.png',
+            'Apple',
+            '#'
+            )
+            +itemBrand(
+            'img/content/lenovo_logo.png',
+            'lenovo',
+            '#'
+            )
+            +itemBrand(
+            'img/content/HTC-logo.png',
+            'HTC',
+            '#'
+            )
+            +itemBrand(
+            'img/content/samsung.png',
+            'samsung',
+            '#'
+            )
+            +itemBrand(
+            'img/content/Philips-logo-vector.png',
+            'Philips',
+            '#'
+            )
+            +itemBrand(
+            'img/content/lg.png',
+            'LG',
+            '#'
+            )

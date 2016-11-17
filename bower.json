@@ -9,7 +9,7 @@
     "Intertech"
   ],
   "license": "no license",
-  "homepage": "https://github.com/Irina23/xfix",
+  "homepage": "",
   "private": true,
   "ignore": [
     "**/.*",
@@ -20,6 +20,8 @@
   ],
   "dependencies": {
     "jquery": "^3.0.0",
-    "jquery.browser": "latest"
+    "jquery.browser": "latest",
+    "owl.carousel": "^2.1.6",
+    "font-awesome": "~4.5.0"
   }
 }
