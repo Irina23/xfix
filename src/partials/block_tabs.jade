@@ -1,0 +1,258 @@
+mixin itemLink (name, url)
+    li
+        a(href= url )= name
+
+
+.tabs
+    .tabs-menu
+        ul.nav.nav-tabs.inline-layout.col-2
+            li.inline-layout(class="active" href="#problem" data-toggle="tab")
+                .img-holder
+                    img.fake-img(src="img/icons/icon-problem.png" alt="проблемы")
+                span проблемы
+            li.inline-layout(href="#services" data-toggle="tab")
+                .img-holder
+                    img.fake-img(src="img/icons/icon-services.png" alt="проблемы")
+                span услуги
+
+
+    .tab-content
+
+        .tab-pane.active#problem
+            .container.inline-layout.col-2
+                .block-link
+                    p.title HTC - Ремонт аппаратной части
+                    ul
+                        +itemLink(
+                        'Замена дисплея',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена задней крышки',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена кнопки включения',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена кнопок громкости',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена кнопок корпуса (клавиатуры)',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена основной камеры',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена передней камеры',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена разъема зарядки (питания)',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена разъема наушников (гарнитуры)',
+                        '#'
+                        )
+                        +itemLink(
+                        'Ремонт Wi-Fi модуля',
+                        '#'
+                        )
+
+                        +itemLink(
+                        'Ремонт материнской платы',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена корпуса',
+                        '#'
+                        )
+                        +itemLink(
+                        'Восстановление после попадания влаги',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена light сенсора',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена разъема SIM',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена разъема SD-карты (flash-карты)',
+                        '#'
+                        )
+
+                        +itemLink(
+                        'Замена аккумулятора',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена антенны',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена вибромотора',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена микрофона',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена голосового динамика',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена полифонического динамика',
+                        '#'
+                        )
+                        +itemLink(
+                        'Замена сенсорного стекла',
+                        '#'
+                        )
+                    p.title HTC - Программный ремонт
+                    ul
+                        +itemLink(
+                        'Обновление ПО',
+                        '#'
+                        )
+                        +itemLink(
+                        'Программный ремонт/перепрошивка',
+                        '#'
+                        )
+                        +itemLink(
+                        'Снятие пароля',
+                        '#'
+                        )
+                .img-holder
+                    .image-holder
+                        img.fake-img(src="img/content/img-tabs.png" alt="проблемы")
+                        .img(style="background: url('img/content/img-tabs.png') no-repeat;background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;")
+
+
+        .tab-pane#services
+            .container.inline-layout.col-2
+                .img-holder
+                    .image-holder
+                        img.fake-img(src="img/content/img-tabs.png" alt="проблемы")
+                        .img(style="background: url('img/content/img-tabs.png') no-repeat;background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;")
+
+                .block-link
+                    p.title HTC - Ремонт аппаратной части
+                        ul
+                            +itemLink(
+                            'Замена дисплея',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена задней крышки',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена кнопки включения',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена кнопок громкости',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена кнопок корпуса (клавиатуры)',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена основной камеры',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена передней камеры',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена разъема зарядки (питания)',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена разъема наушников (гарнитуры)',
+                            '#'
+                            )
+                            +itemLink(
+                            'Ремонт Wi-Fi модуля',
+                            '#'
+                            )
+
+                            +itemLink(
+                            'Ремонт материнской платы',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена корпуса',
+                            '#'
+                            )
+                            +itemLink(
+                            'Восстановление после попадания влаги',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена light сенсора',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена разъема SIM',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена разъема SD-карты (flash-карты)',
+                            '#'
+                            )
+
+                            +itemLink(
+                            'Замена аккумулятора',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена антенны',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена вибромотора',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена микрофона',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена голосового динамика',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена полифонического динамика',
+                            '#'
+                            )
+                            +itemLink(
+                            'Замена сенсорного стекла',
+                            '#'
+                            )
+                    p.title HTC - Программный ремонт
+                    ul
+                        +itemLink(
+                        'Обновление ПО',
+                        '#'
+                        )
+                        +itemLink(
+                        'Программный ремонт/перепрошивка',
+                        '#'
+                        )
+                        +itemLink(
+                        'Снятие пароля',
+                        '#'
+                        )
+

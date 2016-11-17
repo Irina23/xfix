@@ -18,5 +18,4 @@ idea/*
 bower_components/*
 node_modules/*
 dist/*
-src/img/content/*
 templates/*
