@@ -1,0 +1,18 @@
+
+.block_form_master
+    .container
+        h3 Оформить заявку на выезд мастера
+        p Перезвоним в течение 3-х минут
+        form.form_master.inline-layout
+            .form-holder
+                input(type="text" placeholder="Имя" name="name" data-validate="name")
+            .form-holder
+                select(name="device" data-validate="select")
+                    option(value=""   checked) Выберите устройство
+                    option(value="2") устройство 2
+                    option(value="3") устройство 3
+            .form-holder
+                input(type="text" placeholder="Ваш номер телефона" name="phone" data-validate="phone")
+
+            .form-holder
+                input(type="submit" value="вызвать мастера")
