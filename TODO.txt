@@ -1,0 +1,5 @@
+- home page
+- tablet home
+- mobile home
+- popup
+

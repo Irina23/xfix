@@ -1,0 +1,25 @@
+{
+  "name": "xfix",
+  "description": "xfix",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+  ],
+  "authors": [
+    "Intertech"
+  ],
+  "license": "no license",
+  "homepage": "https://github.com/Irina23/xfix",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "jquery.browser": "latest"
+  }
+}
