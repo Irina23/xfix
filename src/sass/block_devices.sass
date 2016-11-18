@@ -66,8 +66,8 @@
 
 
 .block_devices
-	background: linear-gradient(90deg, $main-pink 0%, $main-purple 100%)
-	//&:after
+	//background: linear-gradient(90deg, $main-pink 0%, $main-purple 100%)
+	&:after
 	  content: ''
 	  pointer-events: none
 	  position: absolute
@@ -75,9 +75,11 @@
 	  left: 0
 	  height: 200px
 	  width: 100%
-	  //background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.65) 100%)
+	  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.65) 100%)
 	  //background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 100%)
-
+	&.open
+		&:after
+		  display: none
 	h3
 		color: $main-color-hover
 		font-size: 42px

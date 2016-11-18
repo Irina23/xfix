@@ -10,10 +10,12 @@ $(document).ready( function () {
 	$(".show_buttom").on('click', function(){
 		var $this = $(this).closest(".list_category");
 		$this.find(".list_url").addClass('open');
+		$this.closest(".block_devices").addClass('open');
 	});
 	$(".hide_buttom").on('click', function(){
 		var $this = $(this).closest(".list_category");
 		$this.find(".list_url").removeClass('open');
+		$this.closest(".block_devices").removeClass('open');
 	});
 
 });
