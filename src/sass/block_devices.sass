@@ -1,0 +1,117 @@
+@import _mixins
+
+
+
+.block_category
+	padding: 50px 0
+	position: relative
+	h3
+	  text-align: center
+	  line-height: 1em
+	  font-family: Rubik, sans-serif
+	  margin-bottom: 40px
+
+	.list_category
+		.show_buttom,.hide_buttom
+		  margin-top: 30px
+		  cursor: pointer
+		  position: relative
+		  z-index: 2
+
+		.hide_buttom
+			display: none
+		.list_url
+			height: 200px
+			overflow: hidden
+			position: relative
+			&.open
+				height: auto
+				&:after
+				  	display: none
+				+ .buttom-holder
+					.show_buttom
+					  display: none
+					.hide_buttom
+					  display: block
+				li.parent > ul
+					li
+						&:nth-child(5),&:nth-child(6),&:nth-child(7)
+							opacity: 1!important
+							//transition: all 0.35s
+			&:after
+				content: ''
+				pointer-events: none
+				position: absolute
+				bottom: 0
+				left: 0
+				height: 60px
+				width: 100%
+				background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, white 100%)
+				background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, white 100%)
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 )
+		li.parent
+			a
+				font-size: 20px
+				color: $base-font-color
+				text-decoration: none
+				font-weight: 300
+				line-height: 1.3em
+				font-family: Rubik, sans-serif
+				display: block
+				@media screen and (max-width: 1800px)
+				  	font-size: 18px
+			> a
+				font-weight: 400
+				margin-bottom: 20px
+
+
+.block_devices
+	background: linear-gradient(90deg, $main-pink 0%, $main-purple 100%)
+	//&:after
+	  content: ''
+	  pointer-events: none
+	  position: absolute
+	  bottom: 0
+	  left: 0
+	  height: 200px
+	  width: 100%
+	  //background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.65) 100%)
+	  //background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 100%)
+
+	h3
+		color: $main-color-hover
+		font-size: 42px
+		font-weight: 400
+	.list_category
+		ul
+			&:after
+				display: none
+
+
+		li.parent
+			a
+				color: #fff
+			> ul
+				li
+					//transition: all 0.35s
+					&:nth-child(5)
+	  					opacity: 0.5
+
+					&:nth-child(6)
+						opacity: 0.3
+					&:nth-child(7)
+						opacity: 0.1
+
+.block_appliances
+	//height: 400px
+	//box-sizing: border-box
+	//overflow: hidden
+
+	h3
+		color: #156cb0
+		font-size: 48px
+		font-weight: 300
+
+	.list_category
+		ul
+			height: 180px

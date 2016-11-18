@@ -1,0 +1,131 @@
+mixin itemLinkDevices (name, url)
+    li
+        a(href= url )= name
+
+
+.block_appliances.block_category
+    .container
+        h3 Ремонт другой бытовой техники
+        .list_category
+            ul.list_url.inline-layout.col-4
+                li.parent
+                    a(href="#") Ремонт холодильников
+                    ul
+                        +itemLinkDevices(
+                        'iPhone 3G',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'iPhone 3GS',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'iPhone 4',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'iPhone 4s',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'iPhone 5',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'iPhone 5c',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'iPhone 5s',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'iPhone 6',
+                        '#'
+                        )
+
+                li.parent
+                    a(href="#") Ремонт стиральных машин
+                    ul
+                        +itemLinkDevices(
+                        'iPad 1',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'iPad 2',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'iPad 3',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'iPad 4',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'iPad mini',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'iPad mini Retina',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'iPad mini 3',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'iPad Air',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'iPad Air 2',
+                        '#'
+                        )
+                li.parent
+                    a(href="#") Ремонт ноутбуков
+                    ul
+                        +itemLinkDevices(
+                        'Asha 300',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'Lumia 520',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'Lumia 620',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'Lumia 720',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'Lumia 820',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'Lumia 920',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'Lumia 1020',
+                        '#'
+                        )
+                        +itemLinkDevices(
+                        'Lumia 1520',
+                        '#'
+                        )
+
+                li.parent
+                    a(href="#") Ремонт компьютеров
+                    ul
+                        +itemLinkDevices(
+                        'Стационарные компьютеры',
+                        '#'
+                        )
+            .buttom-holder
+                .link_form.show_buttom открыть все
+                .link_form.hide_buttom свернуть
