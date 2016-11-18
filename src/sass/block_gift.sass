@@ -1,0 +1,62 @@
+@import _mixins
+
+.block_gift
+	background: linear-gradient(90deg, #52edc7 0%, #5ac8fb 100%)
+	padding-top: 40px
+	position: relative
+	&:before
+		position: absolute
+		width: 30%
+		height: 100%
+		content: ""
+		top: 0
+		left: 0
+		background: url("../img/bg/bg_gift1.png") no-repeat right center
+
+	&:after
+	  position: absolute
+	  width: 30%
+	  height: 100%
+	  content: ""
+	  top: 0
+	  right: 0
+	  background: url("../img/bg/bg_gift2.png") no-repeat center
+	.block-text
+		text-align: center
+		margin-top: 30px
+		@media screen and (max-width: 1800px)
+		  margin-top: 0
+
+		h3
+			position: relative
+			color: #fff
+			font-size: 60px
+			font-family: 'Rubik', sans-serif
+			line-height: 1.3em
+			font-weight: 400
+			padding-bottom: 60px
+			@media screen and (max-width: 1800px)
+		  		font-size: 42px
+			&:after
+				content: ""
+				position: absolute
+				bottom: 30px
+				left: 50%
+				width: 200px
+				height: 4px
+				margin-left: -100px
+				background: $main-color-hover
+				
+				
+		p
+			font-family: 'Rubik', sans-serif
+			font-weight: 400
+			font-size: 40px
+			color: #fff
+			margin-bottom: 30px
+			line-height: 1.3em
+			@media screen and (max-width: 1800px)
+		  		font-size: 20px
+
+		.link_form
+			width: 200px
