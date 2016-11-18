@@ -1,0 +1,81 @@
+@import _mixins
+
+.block_repair
+	padding-top: 50px
+	.container
+		position: relative
+	.link_form
+
+	  position: absolute
+	  left: 50%
+	  margin-left: -153px
+	  bottom: -25px
+	h3
+	  font-family: Rubik, sans-serif
+	  color:  #156cb0
+	  font-size: 48px
+	  font-weight: 300
+	  line-height: 1.2em
+	  text-align: center
+	  margin-bottom: 70px
+	  @media screen and (max-width: 1800px)
+	  	font-size: 36px
+	.block_text
+		text-align: center
+		margin: 0 auto 45px
+		> div
+			vertical-align: middle
+			margin-right: 50px
+			&:last-child
+				margin-right: 0
+		.text-right, .text-left
+			color: $base-font-color
+			font-size: 30px
+			font-family: Rubik, sans-serif
+			font-weight: 300
+			line-height: 1.2em
+			@media screen and (max-width: 1800px)
+			  font-size: 24px
+		.text-right
+			text-align: right
+		.text-left
+		  text-align: left
+
+		.block_img
+			.img-holder
+				height: 170px
+				margin-bottom: 15px
+				img
+					height: 100%
+			span
+				text-transform: uppercase
+				color: $main-color
+				font-size: 39px
+				font-family: Rubik, sans-serif
+				font-weight: 400
+				line-height: 1em
+
+
+
+	.list_repair
+		text-align: center
+		padding: 45px 0 90px
+		background: url("../img/bg/shadow_repair.png") top center no-repeat
+		.item
+			padding: 0 60px
+			@media screen and (max-width: 1800px)
+			  padding: 0 30px
+			.img-holder
+				  max-height: 75px
+				  margin: 0 auto 40px
+				  img
+					  height: 100%
+					  margin: auto
+			p
+			  color: $base-font-color
+			  font-size: 30px
+			  font-family: Rubik, sans-serif
+			  font-weight: 300
+			  line-height: 1.2em
+			  @media screen and (max-width: 1800px)
+			  	font-size: 24px
