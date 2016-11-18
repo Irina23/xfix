@@ -1,2 +1,129 @@
-// footer
-.footer
+
+mixin linkFooter (name, url)
+    li
+        a(href= url )= name
+
+
+footer
+    .container
+        .list_category
+            ul.list_url.inline-layout.col-5
+                li.parent
+                    a(href="#") Для партнеров
+                    ul
+                        +linkFooter(
+                        'Презентация',
+                        '#'
+                        )
+                        +linkFooter(
+                        'Условия партнерства',
+                        '#'
+                        )
+                        +linkFooter(
+                        'Договор-оферта',
+                        '#'
+                        )
+                        +linkFooter(
+                        'Добавить организацию',
+                        '#'
+                        )
+
+
+                li.parent
+                    a(href="#") Компания
+                    ul
+                        +linkFooter(
+                        'О проекте',
+                        '#'
+                        )
+                        +linkFooter(
+                        'Контакты 144 сервисов',
+                        '#'
+                        )
+                        +linkFooter(
+                        'Контакты для партнеров',
+                        '#'
+                        )
+                        +linkFooter(
+                        'Реквизиты',
+                        '#'
+                        )
+
+                li.parent
+                    a(href="#") Самое популярное
+                    ul
+                        +linkFooter(
+                        'Ремонт iPhone',
+                        '#'
+                        )
+                        +linkFooter(
+                        'Ремонт iPad',
+                        '#'
+                        )
+                        +linkFooter(
+                        'Ремонт Samsung',
+                        '#'
+                        )
+
+
+                li.parent
+                    a(href="#") Компания
+                    ul
+                        +linkFooter(
+                        'О проекте',
+                        '#'
+                        )
+                        +linkFooter(
+                        'Контакты 144 сервисов',
+                        '#'
+                        )
+                        +linkFooter(
+                        'Контакты для партнеров',
+                        '#'
+                        )
+                        +linkFooter(
+                        'Реквизиты',
+                        '#'
+                        )
+
+                li.parent
+                    a(href="#") Для партнеров
+                    ul
+                        +linkFooter(
+                        'Презентация',
+                        '#'
+                        )
+                        +linkFooter(
+                        'Условия партнерства',
+                        '#'
+                        )
+                        +linkFooter(
+                        'Договор-оферта',
+                        '#'
+                        )
+                        +linkFooter(
+                        'Добавить организацию',
+                        '#'
+                        )
+
+        .list-social
+            ul.inline-layout
+                li
+                    a(href="#" target="_balnk")
+                        i.fa.fa-vk
+
+                li
+                    a(href="#" target="_balnk")
+                        i.fa.fa-facebook
+
+                li
+                    a(href="#" target="_balnk")
+                        i.fa.fa-twitter
+                li
+                    a(href="#" target="_balnk")
+                        i.fa.fa-youtube
+
+                li
+                    a(href="#" target="_balnk")
+                        i.fa.fa-instagram
+

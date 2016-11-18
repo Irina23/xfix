@@ -1,3 +1,46 @@
 @import _mixins
 
-.footer
+footer
+	position: relative
+	padding: 60px 0 30px
+	background: linear-gradient(90deg, #6a2d8f 0%, #f25c29 100%)
+
+	&:before
+		  content: ""
+		  position: absolute
+		  height: 10px
+		  width: 100%
+		  background: linear-gradient(90deg, #e01664 0%, #6a2d8f 100%)
+		  top: 0
+		  left: 0
+	.list_category
+		margin-bottom: 45px
+		li.parent
+			a
+				font-size: 20px
+				color: #fff
+				text-decoration: none
+				font-weight: 300
+				line-height: 1.3em
+				font-family: Rubik, sans-serif
+				display: block
+				@media screen and (max-width: 1800px)
+				  	font-size: 18px
+			> a
+			  font-weight: 400
+			  margin-bottom: 20px
+	.list-social
+		text-align: center
+		li
+			width: 30px
+			height: 30px
+			border-radius: 4px
+			background: #f99f3c
+
+			margin-right: 3px
+			&:last-child
+				margin-right: 0
+			a
+			  color: #ad445d
+			  line-height: 30px
+			  font-size: 24px
