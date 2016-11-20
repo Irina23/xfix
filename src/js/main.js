@@ -18,4 +18,15 @@ $(document).ready( function () {
 		$this.closest(".block_devices").removeClass('open');
 	});
 
+
+	$(document).on('scroll', function () {
+		var top = $(this).scrollTop();
+		if (top > 20) {
+			$(".header.fixed").show();
+		} else if (top < 20 ) {
+			$(".header.fixed").hide();
+		}
+	});
+
 });
+
