@@ -36,8 +36,13 @@
 		@media screen and (max-width: 1250px)
 			width: 210px
 			margin-right: 20px
+		@media screen and (max-width: 959px)
+			display: block
+			margin: 0 auto 20px
 		&:last-child
 			margin-right: 0
+			@media screen and (max-width: 959px)
+				margin: auto
 		&.error
 			.selectbox
 				border-color: $main-pink
