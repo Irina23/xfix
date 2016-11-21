@@ -3,6 +3,8 @@
 .block_advantages
 	padding-top: 60px
 	background: url("../img/bg/shadow2.png") no-repeat bottom center
+	@media screen and (max-width: 650px)
+		background: none
 	.container
 		position: relative
 	h3
@@ -27,8 +29,9 @@
 		@media screen and (max-width: 1250px)
 			width: 600px
 			padding-bottom: 58px
-
-
+		@media screen and (max-width: 650px)
+			width: 100%
+			padding: 0
 		&:after
 			content: ""
 			width: 100%
@@ -40,7 +43,8 @@
 			left: 50%
 			margin-left: -50%
 			z-index: 1
-
+			@media screen and (max-width: 650px)
+				display: none
 
 
 		.text-overflow
@@ -54,6 +58,10 @@
 				width: 410px
 				box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2)
 				padding-top: 30px
+			@media screen and (max-width: 650px)
+				box-shadow: none
+				width: 100%
+				padding: 0
 			> div
 			  position: relative
 			  z-index: 3
@@ -122,6 +130,8 @@
 						margin-left: -60px
 
 	.list_advantages
+		@media screen and (max-width: 800px)
+			display: none
 		.item
 
 			display: block

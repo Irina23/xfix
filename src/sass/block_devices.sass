@@ -101,6 +101,10 @@
 
 
 		li.parent
+			@media screen and (max-width: 750px)
+				width: 25%
+			@media screen and (max-width: 450px)
+				width: 33%
 			a
 				color: #fff
 			> ul
@@ -130,5 +134,8 @@
 	.list_category
 		ul
 			height: 180px
+			li
+				@media screen and (max-width: 450px)
+					width: 50%
 			//@media screen and (max-width: 1250px)
 				height: 120px
