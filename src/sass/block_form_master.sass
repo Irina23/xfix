@@ -13,6 +13,8 @@
 		font-weight: 400
 		@media screen and (max-width: 1800px)
 		  font-size: 36px
+		@media screen and (max-width: 1250px)
+			font-size: 24px
 	p
 		font-size: 30px
 		color: #fff
@@ -21,6 +23,9 @@
 		text-align: center
 		@media screen and (max-width: 1800px)
 		  font-size: 24px
+		@media screen and (max-width: 1250px)
+			font-size: 18px
+			margin-bottom: 30px
 	.form_master
 		text-align: center
 	.form-holder
@@ -28,6 +33,9 @@
 		margin-right: 30px
 		@media screen and (max-width: 1800px)
 		  width: 276px
+		@media screen and (max-width: 1250px)
+			width: 210px
+			margin-right: 20px
 		&:last-child
 			margin-right: 0
 		&.error
@@ -63,6 +71,8 @@
 		color: #000
 		@media screen and (max-width: 1800px)
 		  font-size: 18px
+		@media screen and (max-width: 1250px)
+			font-size: 16px
 	.selectbox
 		width: 100%
 		background: #fff
@@ -77,8 +87,15 @@
 			width: 100%
 			box-sizing: border-box
 			text-align: left
+			.text
+				width: 100%
+				overflow: hidden
+				text-overflow: ellipsis
+				white-space: nowrap
 			@media screen and (max-width: 1800px)
 			  font-size: 18px
+			@media screen and (max-width: 1250px)
+				font-size: 16px
 			.trigger
 				position: absolute
 				width: 25px
@@ -116,6 +133,8 @@
 			border-left: 4px solid $main-color-hover
 			@media screen and (max-width: 1800px)
 				width: 276px
+			@media screen and (max-width: 1250px)
+				width: 210px
 			ul
 				li
 					font-size: 24px
@@ -123,5 +142,7 @@
 					cursor: pointer
 					@media screen and (max-width: 1800px)
 					  font-size: 18px
+					@media screen and (max-width: 1250px)
+						font-size: 16px
 					&.disabled, &.sel, &:first-child
 						display: none

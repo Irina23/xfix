@@ -6,20 +6,25 @@
 		position: relative
 	.link_form
 
-	  position: absolute
-	  left: 50%
-	  margin-left: -153px
-	  bottom: -25px
+		position: absolute
+		left: 50%
+		margin-left: -153px
+		bottom: -25px
+		@media screen and (max-width: 1250px)
+			margin-left: -100px
 	h3
-	  font-family: Rubik, sans-serif
-	  color:  #156cb0
-	  font-size: 48px
-	  font-weight: 300
-	  line-height: 1.2em
-	  text-align: center
-	  margin-bottom: 70px
-	  @media screen and (max-width: 1800px)
-	  	font-size: 36px
+		font-family: Rubik, sans-serif
+		color:  #156cb0
+		font-size: 48px
+		font-weight: 300
+		line-height: 1.2em
+		text-align: center
+		margin-bottom: 70px
+		@media screen and (max-width: 1800px)
+			font-size: 36px
+		@media screen and (max-width: 1250px)
+			font-size: 24px
+			margin-bottom: 40px
 	.block_text
 		text-align: center
 		margin: 0 auto 45px
@@ -36,6 +41,9 @@
 			line-height: 1.2em
 			@media screen and (max-width: 1800px)
 			  font-size: 24px
+			@media screen and (max-width: 1250px)
+				font-size: 18px
+
 		.text-right
 			text-align: right
 		.text-left
@@ -54,6 +62,8 @@
 				font-family: Rubik, sans-serif
 				font-weight: 400
 				line-height: 1em
+				@media screen and (max-width: 1250px)
+					font-size: 24px
 
 
 
@@ -72,10 +82,12 @@
 					  height: 100%
 					  margin: auto
 			p
-			  color: $base-font-color
-			  font-size: 30px
-			  font-family: Rubik, sans-serif
-			  font-weight: 300
-			  line-height: 1.2em
-			  @media screen and (max-width: 1800px)
-			  	font-size: 24px
+				color: $base-font-color
+				font-size: 30px
+				font-family: Rubik, sans-serif
+				font-weight: 300
+				line-height: 1.2em
+				@media screen and (max-width: 1800px)
+					font-size: 24px
+				@media screen and (max-width: 1800px)
+					font-size: 18px

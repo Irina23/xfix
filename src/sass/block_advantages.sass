@@ -6,15 +6,17 @@
 	.container
 		position: relative
 	h3
-	  font-family: Rubik, sans-serif
-	  color:  #156cb0
-	  font-size: 48px
-	  font-weight: 300
-	  line-height: 1.2em
-	  text-align: center
-	  margin-bottom: 40px
-	  @media screen and (max-width: 1800px)
-	  	font-size: 36px
+		font-family: Rubik, sans-serif
+		color:  #156cb0
+		font-size: 48px
+		font-weight: 300
+		line-height: 1.2em
+		text-align: center
+		margin-bottom: 40px
+		@media screen and (max-width: 1800px)
+			font-size: 36px
+		@media screen and (max-width: 1250px)
+			font-size: 24px
 	.block_text
 		text-align: center
 		width: 900px
@@ -22,67 +24,70 @@
 		//background: url("../img/bg/bg-advantages.png") no-repeat center bottom
 		padding-bottom: 88px
 		position: relative
-		//&:before
-		  content: ""
-		  width: 1565px
-		  height:  702px
-		  background: url("../img/bg/shadow2.png") no-repeat bottom center
-		  position: absolute
-		  bottom: 0
-		  left: 50%
-		  margin-left: -782px
-		  z-index: 1
-		  @media screen and (max-width: 1800px)
-			  width: 1418px
-			  //height:  538px
-			  margin-left: -709px
-			  background: url("../img/bg/shadow2-1200.png") no-repeat bottom center
-		  @media screen and (max-width: 1450px)
-			  width: 100%
-			  margin-left: 0
-			  left: 0
+		@media screen and (max-width: 1250px)
+			width: 600px
+			padding-bottom: 58px
+
 
 		&:after
-		  content: ""
-		  width: 900px
-		  height:  514px
-		  background: url("../img/bg/bg-advantages.png") no-repeat bottom center
-		  position: absolute
-		  bottom: 0
-		  left: 50%
-		  margin-left: -450px
-		  z-index: 1
+			content: ""
+			width: 100%
+			height:  514px
+			background: url("../img/bg/bg-advantages.png") no-repeat bottom center
+			background-size: contain
+			position: absolute
+			bottom: 0
+			left: 50%
+			margin-left: -50%
+			z-index: 1
+
+
+
 		.text-overflow
 			background: #fff
 			width: 620px
 			margin: auto
 			position: relative
 			z-index: 3
+
+			@media screen and (max-width: 1250px)
+				width: 410px
+				box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2)
+				padding-top: 30px
 			> div
 			  position: relative
 			  z-index: 3
 			  background: #fff
 			  padding-bottom: 30px
 			&:before
-				  content: ""
-				  width: 670px
-				  height:  601px
-				  background: url("../img/bg/shadow.png") no-repeat
-				  position: absolute
-				  top: 0
-				  left: -25px
-				  z-index: 2
+				content: ""
+				width: 670px
+				height:  601px
+				background: url("../img/bg/shadow.png") no-repeat
+				position: absolute
+				top: 0
+				left: -25px
+				z-index: 2
+				@media screen and (max-width: 1250px)
+					display: none
 	.logo
-		  width: 227px
-		  margin: 0 auto 40px
-		  position: relative
-		  .img-holder
-			  img
-				  width: 100%
+		width: 227px
+		margin: 0 auto 40px
+		position: relative
+		.img-holder
+			img
+			  	width: 100%
+		@media screen and (max-width: 1250px)
+			width: 160px
+			margin-bottom: 30px
+
+
 	.advantages_text
 		position: relative
 		li
 			margin-bottom: 30px
+			@media screen and (max-width: 1250px)
+				margin-bottom: 20px
 			span
 				font-family: Rubik, sans-serif
 				color:  $base-font-color
@@ -91,27 +96,30 @@
 				line-height: 1em
 				@media screen and (max-width: 1800px)
 					font-size: 24px
+				@media screen and (max-width: 1250px)
+					font-size: 18px
 				&.number
-				  font-family: Rubik, sans-serif
-				  color:  $main-color
-				  font-size: 42px
-				  font-weight: 700
-				  line-height: 1em
-				  display: block
-				  padding-bottom: 17px
-				  position: relative
-				  @media screen and (max-width: 1800px)
-				  	font-size: 36px
-
-				  &:after
-					  content: ""
-					  width: 120px
-					  height: 2px
-					  background: $main-color-hover
-					  position: absolute
-					  bottom: 5px
-					  left: 50%
-					  margin-left: -60px
+					font-family: Rubik, sans-serif
+					color:  $main-color
+					font-size: 42px
+					font-weight: 700
+					line-height: 1em
+					display: block
+					padding-bottom: 17px
+					position: relative
+					@media screen and (max-width: 1800px)
+						font-size: 36px
+					@media screen and (max-width: 1250px)
+						font-size: 24px
+					&:after
+						content: ""
+						width: 120px
+						height: 2px
+						background: $main-color-hover
+						position: absolute
+						bottom: 5px
+						left: 50%
+						margin-left: -60px
 
 	.list_advantages
 		.item
@@ -125,15 +133,22 @@
 			z-index: 3
 
 			@media screen and (max-width: 1800px)
-			  left: 0
-			  width: 180px
-			  height: 180px
+				left: 0
+				width: 180px
+				height: 180px
+			@media screen and (max-width: 1250px)
+				width: 150px
+				height: 150px
 			&:nth-child(2n+1)
 				top: 250px
+				@media screen and (max-width: 1250px)
+					top: 150px
 			&:nth-child(2n)
 				top: 510px
 				@media screen and (max-width: 1800px)
-				  top: 460px
+					top: 460px
+				@media screen and (max-width: 1250px)
+					top: 340px
 			&:nth-child(2n+3), &:nth-child(2n+4)
 				right: 180px
 				left: inherit
@@ -151,11 +166,12 @@
 				  height: 100%
 				  vertical-align: middle
 		.img-holder
-			  max-height: 180px
-			  margin: auto
-			  @media screen and (max-width: 1800px)
-			  	height: 130px
-
-			  img
-				  height: 100%
-				  margin: auto
+			max-height: 180px
+			margin: auto
+			@media screen and (max-width: 1800px)
+				height: 130px
+			@media screen and (max-width: 1250px)
+				height: 100px
+			img
+				height: 100%
+				margin: auto

@@ -24,6 +24,8 @@
 			height: 200px
 			overflow: hidden
 			position: relative
+			@media screen and (max-width: 1250px)
+				height: 160px
 			&.open
 				height: auto
 				&:after
@@ -49,6 +51,8 @@
 				background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, white 100%)
 				background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, white 100%)
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 )
+				//@media screen and (max-width: 1250px)
+					height: 40px
 		li.parent
 			a
 				font-size: 20px
@@ -60,6 +64,8 @@
 				display: block
 				@media screen and (max-width: 1800px)
 				  	font-size: 18px
+				@media screen and (max-width: 1250px)
+					font-size: 14px
 			> a
 				font-weight: 400
 				margin-bottom: 20px
@@ -86,6 +92,8 @@
 		font-weight: 400
 		@media screen and (max-width: 1800px)
 			font-size: 36px
+		@media screen and (max-width: 1250px)
+			font-size: 24px
 	.list_category
 		ul
 			&:after
@@ -117,7 +125,10 @@
 		font-weight: 300
 		@media screen and (max-width: 1800px)
 			font-size: 36px
-
+		@media screen and (max-width: 1250px)
+			font-size: 24px
 	.list_category
 		ul
 			height: 180px
+			//@media screen and (max-width: 1250px)
+				height: 120px

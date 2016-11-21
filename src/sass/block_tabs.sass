@@ -9,28 +9,38 @@
 		left: 50%
 		margin-left: -153px
 		bottom: -25px
-
+		@media screen and (max-width: 1250px)
+			margin-left: -100px
 	.tabs-menu
 		text-align: center
 		li
 		
-			line-height: 100px
-			font-size: 36px
+			//line-height: 100px
+			//font-size: 36px
 			color: #bebebe
 			text-transform: uppercase
 			position: relative
 			padding-top: 15px
 			background: #fff
 			cursor: pointer
+
 			.img-holder
 				vertical-align: middle
 				margin-right: 20px
 				filter: grayscale(100%)
 				opacity: 0.7
+				max-width: 90px
+				img
+					width: 100%
+				@media screen and (max-width: 1250px)
+					width: 60px
 			span
 				font-size: 36px
 				line-height: 100px
 				vertical-align: middle
+				@media screen and (max-width: 1250px)
+					font-size: 20px
+					line-height: 60px
 			&:before
 				content: ""
 				position: absolute
@@ -60,6 +70,8 @@
 					margin: auto
 					@media screen and (max-width: 1800px)
 					  width: 400px
+					@media screen and (max-width: 1250px)
+						width: calc(100% - 60px)
 			.block-link
 				column-count: 2
 				column-gap: 30px
@@ -70,6 +82,9 @@
 					@media screen and (max-width: 1800px)
 					  font-size: 20px
 					  margin-bottom: 10px
+					@media screen and (max-width: 1250px)
+						font-size: 16px
+
 				ul
 					+ .title
 						margin-top: 20px
@@ -83,3 +98,5 @@
 							display: block
 							@media screen and (max-width: 1800px)
 								font-size: 16px
+							@media screen and (max-width: 1800px)
+								font-size: 14px
