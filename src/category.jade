@@ -1,0 +1,25 @@
+doctype html
+html(lang='ru')
+	head
+		title XFIX
+
+		include ./partials/head.jade
+
+	body
+
+		include ./partials/noscript.jade
+		include ./partials/navigation.jade
+		main
+
+
+			include ./partials/block_tabs.jade
+			include ./partials/block_calculation.jade
+
+			include ./partials/block_form_master.jade
+			include ./partials/block_gift.jade
+			include ./partials/block_table_services.jade
+
+		include ./partials/footer.jade
+		include ./partials/modals.jade
+
+	include ./partials/scripts.jade

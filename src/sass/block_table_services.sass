@@ -1,0 +1,40 @@
+@import _mixins
+
+.block_table_services
+
+	padding-top: 60px
+	position: relative
+	h3
+		text-align: center
+		font-family: Rubik, sans-serif
+		color:  #e27a3f
+		font-size: 48px
+		font-weight: 300
+		line-height: 1em
+		margin-bottom: 30px
+
+
+	@media screen and (max-width: 800px)
+		padding: 30px 0
+	.img-holder
+		@media screen and (max-width: 800px)
+			display: none
+
+	.block-text
+		text-align: center
+		margin-top: 30px
+		position: relative
+		z-index: 2
+		.table-overflow
+			box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2)
+			border-radius: 10px
+			table
+				border: 0
+				border-spacing: 0
+				border-radius: 10px
+				tr
+					&:first-child
+						background: linear-gradient(90deg, #f25c29 0%, #fed24b 100%)
+					th
+						background: none
+					td

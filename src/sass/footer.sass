@@ -43,15 +43,65 @@ footer
 	.list-social
 		text-align: center
 		li
-			width: 30px
-			height: 30px
-			border-radius: 4px
-			background: #f99f3c
+			width: 44px
+			height: 44px
+			//border-radius: 4px
+			background: $main-color-hover
 
 			margin-right: 3px
 			&:last-child
 				margin-right: 0
 			a
-			  color: #ad445d
-			  line-height: 30px
-			  font-size: 24px
+				display: block
+				color: #ad445d
+				//line-height: 30px
+				font-size: 24px
+				line-height: 44px
+
+	.block_footer_info
+		text-align: center
+
+		.block-buttom
+			margin-right: 25px
+			a
+				line-height: 45px
+				text-decoration: none
+				&.link_login
+					background: $main-color-hover
+					border-bottom: 5px solid $main-color
+					width: 200px
+					display: inline-block
+					margin: auto
+					color: #a24065
+					font-size: 24px
+					line-height: 45px
+					text-transform: uppercase
+					text-decoration: none
+					text-align: center
+					@media screen and (max-width: 1920px)
+						font-size: 16px
+						width: 70px
+					@media screen and (max-width: 1250px)
+						font-size: 14px
+						width: 70px
+
+
+				&.link_form
+					display: inline-block
+					line-height: 45px
+					font-size: 24px
+					@media screen and (max-width: 1920px)
+						font-size: 16px
+						width: 230px
+					@media screen and (max-width: 1250px)
+						font-size: 14px
+						width: 200px
+
+		@media screen and (max-width: 700px)
+			.block-buttom
+				display: block
+				margin-bottom: 30px
+				margin-right: auto
+
+			.list-social
+				display: block
