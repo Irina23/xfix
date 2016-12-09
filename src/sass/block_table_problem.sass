@@ -1,13 +1,13 @@
 @import _mixins
 
-.block_table_services
+.block_table_problem
 
 	padding-top: 60px
 	position: relative
 	h3
 		text-align: center
 		font-family: Rubik, sans-serif
-		color:  #e27a3f
+		color:  #156cb0
 		font-size: 48px
 		font-weight: 300
 		line-height: 1em
@@ -24,9 +24,9 @@
 			content: ""
 			position: absolute
 			top: 0
-			left: 40px
-			background: url("../img/bg/bg_block_setting.png") no-repeat left bottom
-			background-size: 100% auto
+			right: 40px
+			background: url("../img/bg/bg_block_problem.png") no-repeat right bottom
+			background-size:   100% auto
 			height: 100%
 			width: 32%
 			//@media screen and (max-width: 1920px)
@@ -38,6 +38,7 @@
 		margin-left: 80px
 		margin-bottom: 40px
 		vertical-align: bottom
+		//float: right
 		@media screen and (max-width: 1920px)
 			width: 30%
 			margin-right: 80px
@@ -65,7 +66,7 @@
 					position: relative
 					&:first-child
 						&:after
-							background: linear-gradient(90deg, #f25c29 0%, #fed24b 100%)
+							background: linear-gradient(90deg, #1861ad 0%, #00b2c0 100%)
 							content: ""
 							position: absolute
 							top: 0
@@ -110,6 +111,8 @@
 							line-height: 30px
 							width: 130px
 							font-size: 18px
+							background: #156cb0
+							border-color: #01afbf
 							border-width: 3px
 							@media screen and (max-width: 1920px)
 								font-size: 16px
