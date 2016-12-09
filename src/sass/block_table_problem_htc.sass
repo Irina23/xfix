@@ -1,0 +1,81 @@
+@import _mixins
+
+.block_table_problem_htc
+
+	padding: 60px 0
+	position: relative
+
+
+	h3
+		text-align: center
+		font-family: Rubik, sans-serif
+		color:  #156cb0
+		font-size: 48px
+		font-weight: 300
+		line-height: 1em
+		margin-bottom: 40px
+		@media screen and (max-width: 1920px)
+			font-size: 36px
+
+	.link_form
+
+		position: absolute
+		left: 50%
+		margin-left: -153px
+		bottom: -25px
+		@media screen and (max-width: 1920px)
+			margin-left: -125px
+		@media screen and (max-width: 1250px)
+			margin-left: -100px
+
+	.block-text
+		text-align: center
+		position: relative
+		width: 100%
+
+		.table-overflow
+
+			table
+				border: 0
+				//border-spacing: 0
+				//border-radius: 10px
+				width: 100%
+				tr
+					position: relative
+					&:nth-child(2n+1)
+						background: #e1fcff
+					&:first-child
+						background: none
+
+					th
+						background: none
+						font-weight: normal
+						color: #fff
+						font-size: 24px
+						line-height: 1.3em
+						text-align: center
+						padding: 20px 15px
+						position: relative
+						z-index: 2
+						text-transform: uppercase
+						background: $main-color
+						@media screen and (max-width: 1920px)
+							font-size: 16px
+
+					td
+						padding: 15px 35px
+						color:  #797979
+						font-size: 18px
+						font-weight: 300
+
+
+						@media screen and (max-width: 1920px)
+							font-size: 16px
+							padding: 10px 20px
+						&:first-child
+							text-align: left
+							font-size: 24px
+							font-weight: 400
+							color: $main-color
+							@media screen and (max-width: 1920px)
+								font-size: 18px

@@ -8,13 +8,15 @@ html(lang='ru')
 	body
 
 		include ./partials/noscript.jade
-		include ./partials/navigation.jade
+		include ./partials/navigation_category.jade
 		main
 
-
+			include ./partials/block_breadcrumbs.jade
+			include ./partials/block_model_category.jade
 			include ./partials/block_tabs.jade
+			include ./partials/block_video_seo.jade
 			include ./partials/block_calculation.jade
-
+			include ./partials/block_table_problem_htc.jade
 			include ./partials/block_form_master.jade
 			include ./partials/block_table_problem.jade
 			include ./partials/block_gift.jade

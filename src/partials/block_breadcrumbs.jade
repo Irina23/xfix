@@ -1,0 +1,21 @@
+mixin itemBread (name, url)
+    li
+        a(href= url )= name
+
+.block_breadcrumbs
+    .container
+        .list_bread
+            ul.inline-layout
+                +itemBread(
+                'Крошки',
+                '#'
+                )
+                +itemBread(
+                'Крошки',
+                '#'
+                )
+                +itemBread(
+                'Крошки',
+                '#'
+                )
+

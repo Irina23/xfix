@@ -18,6 +18,19 @@ $(document).ready( function () {
 		$this.closest(".block_devices").removeClass('open');
 	});
 
+	$(".link_more.show_buttom").on('click', function(){
+		var $this = $(this).closest(".block-text");
+		$this.find(".text-overflow").addClass('open');
+		$this.addClass('open');
+	});
+	$(".link_more.hide_buttom").on('click', function(){
+		var $this = $(this).closest(".block-text");
+		$this.find(".text-overflow").removeClass('open');
+		$this.removeClass('open');
+	});
+
+
+
 
 	$(document).on('scroll', function () {
 		var top = $(this).scrollTop();

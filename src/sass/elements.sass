@@ -17,5 +17,77 @@
   @media screen and (max-width: 1250px)
     font-size: 16px
     width: 200px
+
+
+
+.link_more
+
+  width: 170px
+  display: block
+  //margin: auto
+  text-decoration: none
+  color:  #6a2d8f
+  font-size: 18px
+  font-weight: 300
+  line-height: 1em
+  //text-align: center
+  position: relative
+  padding: 6px 15px
+  cursor: pointer
+  z-index: 2
+  span
+    position: relative
+    z-index: 2
+  &:before
+    content: ''
+    position: absolute
+    width: 155px
+    height: 100%
+    background: $main-color-hover
+    left: 0
+    top: 0
+    z-index: 1
+  &:after
+    content: ''
+    position: absolute
+    width: 0
+    height: 0
+    border-top: 15px solid transparent
+    border-bottom: 15px solid transparent
+    border-left: 15px solid $main-color-hover
+    right: 0
+    top: 0
+    z-index: 1
+
+
+
+
+
+
 .gradient
   background: linear-gradient(90deg, $main-pink 0%, $main-purple 100%)
+
+
+.list-social
+  text-align: center
+  li
+    width: 44px
+    height: 44px
+    //border-radius: 4px
+    background: $main-color-hover
+    margin-right: 3px
+
+
+    @media screen and (max-width: 1250px)
+
+        margin-right: 2px
+
+
+    &:last-child
+      margin-right: 0
+    a
+      display: block
+      color: #ad445d
+      //line-height: 30px
+      font-size: 24px
+      line-height: 44px
