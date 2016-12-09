@@ -1,0 +1,50 @@
+@import _mixins
+
+
+
+.block_menu_category
+	margin-bottom: 100px
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		width: 100%
+		height: 1px
+		left: 0
+		background: linear-gradient(90deg, #f25c29 0%, #fed24b 100%)
+	&:before
+		content: ""
+		position: absolute
+		bottom: 0
+		width: 100%
+		height: 1px
+		left: 0
+		background: linear-gradient(90deg, #f25c29 0%, #fed24b 100%)
+
+
+	.list_category
+		text-align: right
+
+
+
+		li.parent
+			> a
+				font-size: 18px
+				color: $main-color-hover
+				text-decoration: none
+				font-weight: 300
+				line-height: 40px
+				display: block
+				padding: 0 20px
+				@media screen and (max-width: 1920px)
+				  	font-size: 16px
+				@media screen and (max-width: 1250px)
+					font-size: 14px
+
+			.drop-menu
+				display: none
+
+
+
+
