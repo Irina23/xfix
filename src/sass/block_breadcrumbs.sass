@@ -16,12 +16,15 @@
         font-weight: 300
         padding: 0 30px
         line-height: 30px
+        @media screen and (max-width: 959px)
+          font-size: 14px
+          padding: 0 20px
         &:before
           content: ""
           height: 20px
           width: 2px
           position: absolute
-          right: 0
+          left: 7px
           top: -2px
           background: #eff3f7
           transform: rotate(45deg)
@@ -32,13 +35,13 @@
           height: 20px
           width: 2px
           position: absolute
-          right: 0
+          left: 7px
           bottom: -2px
           background: #eff3f7
           transform: rotate(-45deg)
           z-index: 2
 
-      &:last-child
+      &:first-child
         a
           &:after, &:before
             display: none

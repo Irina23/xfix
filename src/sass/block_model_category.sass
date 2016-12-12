@@ -13,6 +13,10 @@
     margin-bottom: 30px
     @media screen and (max-width: 1920px)
       font-size: 36px
+    @media screen and (max-width: 1250px)
+      font-size: 28px
+    @media screen and (max-width: 400px)
+      font-size: 24px
 
   .list_model_link
     .row
@@ -26,6 +30,8 @@
       align-content: center
       align-self: center
       margin-bottom: 20px
+      @media screen and (max-width: 959px)
+        display: block
       &:last-child
         margin-bottom: 0
 
@@ -34,6 +40,12 @@
         text-align: center
         min-width: 45px
         max-width: 7%
+        @media screen and (max-width: 959px)
+          max-width: inherit
+          display: inline-block
+          vertical-align: middle
+          width: 25%
+
         a
           color:  #7d7d7d
           font-size: 24px
@@ -45,3 +57,5 @@
             color:  #156cb0
           @media screen and (max-width: 1920px)
             font-size: 16px
+          @media screen and (max-width: 959px)
+            font-size: 14px

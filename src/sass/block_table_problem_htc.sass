@@ -4,6 +4,8 @@
 
 	padding: 60px 0
 	position: relative
+	@media screen and (max-width: 959px)
+		padding: 40px 0
 
 
 	h3
@@ -16,6 +18,10 @@
 		margin-bottom: 40px
 		@media screen and (max-width: 1920px)
 			font-size: 36px
+		@media screen and (max-width: 1250px)
+			font-size: 28px
+		@media screen and (max-width: 400px)
+			font-size: 24px
 
 	.link_form
 
@@ -34,12 +40,14 @@
 		width: 100%
 
 		.table-overflow
-
+			@media screen and (max-width: 750px)
+				overflow-x: scroll
 			table
 				border: 0
 				//border-spacing: 0
 				//border-radius: 10px
 				width: 100%
+				min-width: 700px
 				tr
 					position: relative
 					&:nth-child(2n+1)
@@ -61,7 +69,9 @@
 						background: $main-color
 						@media screen and (max-width: 1920px)
 							font-size: 16px
-
+						@media screen and (max-width: 959px)
+							font-size: 14px
+							padding: 10px
 					td
 						padding: 15px 35px
 						color:  #797979
@@ -72,6 +82,9 @@
 						@media screen and (max-width: 1920px)
 							font-size: 16px
 							padding: 10px 20px
+						@media screen and (max-width: 959px)
+							font-size: 14px
+							padding: 10px
 						&:first-child
 							text-align: left
 							font-size: 24px
@@ -79,3 +92,5 @@
 							color: $main-color
 							@media screen and (max-width: 1920px)
 								font-size: 18px
+							@media screen and (max-width: 1199px)
+								font-size: 16px

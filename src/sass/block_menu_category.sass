@@ -36,6 +36,8 @@
 				> a
 					&:after
 						border-bottom: 20px solid #d8d8d8
+						@media screen and (max-width: 959px)
+							display: none
 				.drop-menu
 					left: inherit
 					right: 0
@@ -69,8 +71,12 @@
 				> a
 					&:after
 						display: block
+						@media screen and (max-width: 959px)
+							display: none
 				.drop-menu
 					display: block
+					@media screen and (max-width: 959px)
+						display: none
 			.drop-menu
 				display: none
 				position: absolute
@@ -91,6 +97,8 @@
 							font-size: 18px
 							text-decoration: underline
 							padding: 0
+							&:after
+								display: none!important
 
 
 					a
