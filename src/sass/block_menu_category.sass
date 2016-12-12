@@ -25,10 +25,20 @@
 
 	.list_category
 		text-align: right
+		position: relative
 
 
 
 		li.parent
+
+			position: relative
+			&:last-child
+				> a
+					&:after
+						border-bottom: 20px solid #d8d8d8
+				.drop-menu
+					left: inherit
+					right: 0
 			> a
 				font-size: 18px
 				color: $main-color-hover
@@ -37,14 +47,58 @@
 				line-height: 40px
 				display: block
 				padding: 0 20px
+				position: relative
+				&:after
+					content: ''
+					position: absolute
+					width: 0
+					height: 0
+					border-left: 20px solid transparent
+					border-right: 20px solid transparent
+					border-bottom: 20px solid #f6f6f6
+					left: 50%
+					margin-left: -20px
+					top: 100%
+					z-index: 11
+					display: none
 				@media screen and (max-width: 1920px)
 				  	font-size: 16px
 				@media screen and (max-width: 1250px)
 					font-size: 14px
-
+			&:hover
+				> a
+					&:after
+						display: block
+				.drop-menu
+					display: block
 			.drop-menu
 				display: none
+				position: absolute
+				top: calc(100% + 20px)
+				width: 640px
+				background: linear-gradient(90deg, #ffffff 0%, #d5d5d5 100%)
+				box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.38)
+				padding: 20px
+				box-sizing: border-box
+				z-index: 10
+				text-align: left
+				column-count: 2
+				left: -100px
+				li
+					&.parent
 
+						>a
+							font-size: 18px
+							text-decoration: underline
+							padding: 0
+
+
+					a
+						text-decoration: none
+						color:  #1f87e1
+						font-size: 16px
+						font-weight: 300
+						text-align: left
 
 
 
