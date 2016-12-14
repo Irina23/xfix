@@ -3,15 +3,20 @@
 .block_video_seo
 
 	padding-top: 80px
+	margin-bottom: 50px
 	position: relative
 
 
 
 	.block_video
 		width: calc(50% - 25px)
+		float: left
+		margin-right: 50px
 		@media screen and (max-width: 800px)
+			float: none
 			width: 100%
 			margin-bottom: 40px
+			margin-right: auto
 		@media screen and (max-width: 600px)
 			height: 250px
 			iframe
@@ -25,9 +30,11 @@
 
 
 	.block-text
-		margin-left: 50px
+		//margin-left: 50px
 		width: calc(50% - 25px)
-		margin-bottom: 50px
+
+		overflow: hidden
+		display: inline-block
 		@media screen and (max-width: 1920px)
 		  margin-top: 0
 		@media screen and (max-width: 800px)
@@ -64,6 +71,9 @@
 		.hide_buttom
 			display: none
 		&.open
+			display: inline
+			.text-overflow
+				display: inline
 			.show_buttom
 				display: none
 			.hide_buttom

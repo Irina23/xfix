@@ -3,49 +3,252 @@
 // --------------------------------------------------
 // MODALS
 // --------------------------------------------------
-.modal-holder
-	// background: #fff
-	opacity: 0
-	position: fixed
-	top: 0
-	left: 0
-	right: 0
-	bottom: 0
-	visibility: hidden
-	z-index: 10
-	overflow: hidden
-	overflow-x: hidden
-	overflow-y: auto
-	transition: opacity .3s ease-out, transform .2s, visibility .4s
-	.modal-content
-		background: #fff
-		position: relative
-		transform: translateY(40px) translateZ(0)
-		transition: opacity .3s ease-out, transform .5s, visibility .4s, outline .4s
-	&.opened
-		opacity: 1
-		visibility: visible
-		-webkit-overflow-scrolling: touch
-		.modal-content
-			transform: translateY(0) translateZ(2px)
-			transition: opacity .3s ease-out, transform .5s, visibility .4s, outline .4s
-	&::-webkit-scrollbar
-		height: 0
-		width: 0
+#overlay
+  z-index: 30
+  position: fixed
+  background-color: #000
+  opacity: 0.85
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none
 
-.close-modal
-	background-size: 100%
-	right: 0
-	top: 0
-	margin-top: 30px
-	margin-right: 30px
-	height: 24px
-	width: 24px
-	transition: top .1s
-	z-index: 1020
-	&:after
-		display: none
-	&:hover
-		opacity: 1
-		transition: opacity .3s
+.modal_div
+  background: url("../img/bg/bg_popup.png") no-repeat
+  box-shadow: 0px 5px 0px 0px #56212e
+  width: 600px
+  top: 50%
+  left: 50%
+  margin-left: -300px
+  height: 315px
+  margin-top: -167px
+  opacity: 0
+  display: none
+  position: fixed
+  z-index: 31
+  @media screen and (max-width: 750px)
+    width: calc(100% - 40px)
+    left: 20px
+    margin-left: 0
+    overflow: hidden
+
+    .modal_content
+      overflow-y: scroll
+      padding: 40px 20px
+
+      .row
+        .form-holder
+          display: block
+          width: 100% !important
+          margin-right: 0
+  &#popup1
+    input[type="submit"]
+      display: none
+  &#popup3
+    width: 700px
+    height: 700px
+    margin-top: -350px
+    margin-left: -350px
+    background: url("../img/bg/bg_popup2.png") no-repeat
+    @media screen and (max-width: 750px)
+      margin-top: -240px
+      height: 480px
+    .modal_content
+      padding: 70px 40px
+      @media screen and (max-width: 750px)
+        padding: 40px 20px
+        height: 100%
+    @media screen and (max-width: 750px)
+      width: calc(100% - 40px)
+      left: 20px
+      margin-left: 0
+      margin-top: -240px
+      height: 480px
+
+
+
+  &.show
+    opacity: 1
+    display: block
+  .modal_close
+    position: absolute
+    width: 40px
+    height: 40px
+    background: url("../img/icons/close.png") no-repeat
+    background-size: 100%
+    top: 15px
+    right: 15px
+    cursor: pointer
+    transition: all 0.35s
+    z-index: 10
+    @media screen and (max-width: 750px)
+      width: 30px
+      height: 30px
+      top: 5px
+      right: 5px
+  .modal_content
+    padding: 70px
+    @media screen and (max-width: 750px)
+      padding: 40px 20px
+    .link_form
+      width: 306px
+      margin-bottom: 40px
+      @media screen and (max-width: 750px)
+        width: 100%
+      &:last-child
+        margin-bottom: 0
+      &:nth-child(2)
+        background: $main-color-hover
+        border-color: $main-color
+        color:  #a24065
+
+    input[type="submit"]
+      cursor: pointer
+      width: 176px
+      //display: none
+    .form-holder
+      margin-bottom: 30px
+      &.required
+        position: relative
+        textarea, input[type="text"]
+          padding-right: 35px
+        &:after
+          width: 30px
+          height: 30px
+          border-radius: 30px
+          background: #81357d
+          content: "!"
+          position: absolute
+          text-align: center
+          top: 35px
+          right: 5px
+          color: #fff
+          font-size: 30px
+          line-height: 30px
+          font-family: "Roboto Condensed", sans-serif
+
+    .row
+      .form-holder
+        width: calc((100% - 15px)/2)
+        margin-right: 15px
+        &:last-child
+          margin-right: 0
+    label
+      margin-bottom: 10px
+      color: #fff
+      font-size: 16px
+      line-height: 1em
+      display: block
+      @media screen and (max-width: 750px)
+        font-size: 12px
+
+    textarea
+      width: 100%
+      background: #fff
+      border: 0
+      border-top: 4px solid $main-color-hover
+      border-left: 4px solid $main-color-hover
+      box-sizing: border-box
+      line-height: 42px
+      padding: 10px 15px
+      font-size: 24px
+      color: #000
+      height: 120px
+      @media screen and (max-width: 1920px)
+        font-size: 18px
+      @media screen and (max-width: 1250px)
+        font-size: 16px
+    input[type="text"]
+      width: 100%
+      background: #fff
+      border: 0
+      border-top: 4px solid $main-color-hover
+      border-left: 4px solid $main-color-hover
+      box-sizing: border-box
+      line-height: 42px
+      padding: 0 15px
+      font-size: 24px
+      color: #000
+      @media screen and (max-width: 1920px)
+        font-size: 18px
+      @media screen and (max-width: 1250px)
+        font-size: 16px
+    .selectbox
+      width: 100%
+      background: #fff
+      border-top: 4px solid $main-color-hover
+      border-left: 4px solid $main-color-hover
+      box-sizing: border-box
+      .select
+        padding: 0 50px 0 15px
+        line-height: 42px
+        font-size: 24px
+        cursor: pointer
+        width: 100%
+        box-sizing: border-box
+        text-align: left
+        .text
+          width: 100%
+          overflow: hidden
+          text-overflow: ellipsis
+          white-space: nowrap
+        @media screen and (max-width: 1920px)
+          font-size: 18px
+        @media screen and (max-width: 1250px)
+          font-size: 16px
+        .trigger
+          position: absolute
+          width: 25px
+          height: 16px
+          top: 50%
+          right: 25px
+          margin-top: -8px
+          &:before
+            content: ""
+            height: 16px
+            width: 2px
+            position: absolute
+            left: 6px
+            top: 0
+            background: #c8c8c8
+            transform: rotate(-45deg)
+          &:after
+            content: ""
+            height: 16px
+            width: 2px
+            position: absolute
+            right: 6px
+            top: 0
+            background: #c8c8c8
+            transform: rotate(45deg)
+
+      .dropdown
+        width: calc(100% + 4px)
+        top: 42px!important
+        bottom: inherit!important
+        text-align: left
+        background: #fff
+        left: -4px
+        border-bottom: 4px solid $main-color-hover
+        border-left: 4px solid $main-color-hover
+        //@media screen and (max-width: 1920px)
+          width: 247px
+        //@media screen and (max-width: 1250px)
+          width: 210px
+        ul
+          li
+            font-size: 24px
+            padding: 10px 50px 10px 15px
+            cursor: pointer
+            @media screen and (max-width: 1920px)
+              font-size: 18px
+            @media screen and (max-width: 1250px)
+              font-size: 16px
+            &.disabled, &.sel, &:first-child
+              display: none
+
+
+
 

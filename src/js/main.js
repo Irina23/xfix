@@ -41,5 +41,70 @@ $(document).ready( function () {
 		}
 	});
 
+
+
+	//modal form
+	var overlay = $('#overlay');
+	var open_modal = $('.open_modal');
+	var close = $('.modal_close, #overlay');
+	var modal = $('.modal_div');
+
+
+	if($(modal).hasClass('show')){
+		overlay.fadeIn(100,
+			function(){
+
+				$('body').addClass('no-scroll');
+			});
+
+	}
+
+	open_modal.click( function(event){
+		event.preventDefault();
+		var div = $(this).attr('href');
+		overlay.fadeIn(400,
+			function(){
+				$(div)
+					.css('display', 'block')
+					.animate({opacity: 1, top: '50%'}, 200);
+				$('body').addClass('no-scroll');
+			});
+	});
+
+	close.click( function(){
+		modal
+			.animate({opacity: 0, top: '45%'}, 200,
+				function(){
+					$(this).css('display', 'none');
+					overlay.fadeOut(400);
+					$(".message_modal").removeClass("show");
+					$('body').removeClass('no-scroll');
+				}
+			);
+	});
+
+
+	$(this).keydown(function(eventObject){
+		if (eventObject.which == 27)
+			modal.animate({opacity: 0}, 200,
+				function(){
+					$(this).css('display', 'none');
+					overlay.fadeOut(400);
+					$(".message_modal").removeClass('show');
+					$('body').removeClass('no-scroll');
+
+				}
+			);
+	});
+
+
+	$('#popup1 form').change(function () {
+		//console.log($('select[name="device"]').attr('value'));
+		//console.log($('select[name="city"]').attr('value'));
+		if((($('select[name="device"]').val() !== '0' ) || ($('select[name="device"]').val() !== null )) && (($('select[name="city"]').val() !== '0' )) || ($('select[name="city"]').val() !== null )){
+			$('input[type="submit"]').show();
+		}
+	});
+
 });
 

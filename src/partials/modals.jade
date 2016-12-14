@@ -1,0 +1,59 @@
+
+#overlay
+
+#popup1.modal_div
+    .modal_close
+    .modal_content
+
+        form
+            .form-holder
+                select(name="device" data-validate="select")
+                    option(value="0"   ) Выберите устройство
+                    option(value="2") устройство 2
+                    option(value="3") устройство 3
+
+            .form-holder
+                select(name="city" data-validate="select")
+                    option(value="0"   ) Ваш город
+                    option(value="2") Киев
+                    option(value="3") Черкассы
+
+            input.link_form(type="submit" value="Показать")
+
+
+
+#popup2.modal_div
+    .modal_close
+    .modal_content
+        a.link_form(href="#") добавить организацию
+        a.link_form(href="#") ДОБАВИТЬ СЕРВИС
+
+#popup3.modal_div
+    .modal_close
+    .modal_content
+        form
+            .row.inline-layout
+                .form-holder.required
+                    label Название организации (бренд/вывеска) *
+                    input(type="text" placeholder="example" name="name_company" data-validate="name")
+                .form-holder
+                    label ФИО контактного лица
+                    input(type="text" placeholder="example" name="name" data-validate="name")
+            .row.inline-layout
+                .form-holder
+                    label Сайт компании (необязательно)
+                    input(type="text" placeholder="example" name="site" data-validate="empty")
+                .form-holder
+                    label Телефон контактного лица
+                    input(type="text" placeholder="example" name="phone" data-validate="phone-default")
+            .row.inline-layout
+                .form-holder.required
+                    label Контактный телефон организации *
+                    input(type="text" placeholder="example" name="phone2" data-validate="phone")
+                .form-holder
+                    label E-mail (основной)
+                    input(type="text" placeholder="example" name="email" data-validate="default")
+            .form-holder.required
+                label Главный адрес организации *
+                textarea(placeholder="Текст:" name="message" data-validate="empty")
+            input.link_form(type="submit" value="Далее")
