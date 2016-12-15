@@ -5,15 +5,16 @@ mixin itemLink (name, url)
 
 .tabs
     .tabs-menu
-        ul.nav.nav-tabs.inline-layout.col-2
-            li.inline-layout(class="active" href="#problem" data-toggle="tab")
-                .img-holder
-                    img.fake-img(src="img/icons/icon-problem.png" alt="проблемы")
-                span проблемы
-            li.inline-layout(href="#services" data-toggle="tab")
-                .img-holder
-                    img.fake-img(src="img/icons/icon-services.png" alt="проблемы")
-                span услуги
+        .container
+            ul.nav.nav-tabs.inline-layout.col-2
+                li.inline-layout(class="active" href="#problem" data-toggle="tab")
+                    .img-holder
+                        img.fake-img(src="img/icons/icon-problem.png" alt="проблемы")
+                    span проблемы
+                li.inline-layout(href="#services" data-toggle="tab")
+                    .img-holder
+                        img.fake-img(src="img/icons/icon-services.png" alt="проблемы")
+                    span услуги
 
 
     .tab-content
