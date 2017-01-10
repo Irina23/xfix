@@ -1,0 +1,80 @@
+header
+	.header.fixed
+		.container
+			.block-top.inline-layout
+				.logo
+					a.inline-layout(href="#")
+						.img-holder
+							img(src="img/content/logo-xfix.png" alt="XFIX")
+						span .com.
+							i ua
+				.block-contact.inline-layout
+					form.city-form
+						.form-holder.city-select
+							select(name="city")
+								option(value=""   checked) Ваш город
+								option(value="2") Киев
+								option(value="3") Черкассы
+					.form-holder.phone-select
+						select(name="phone")
+							option(value=""   checked) 8 800  555 55 55
+							option(value="2") 8 800  555 55 55
+							option(value="3") 8 800  555 55 55
+				.block-search
+					form.form-serch.inline-layout
+						.form-holder
+							input(type="text" placeholder="Поиск" name="search" data-validate="default")
+						.form-holder
+							input(type="submit" value="")
+				.block-buttom.inline-layout
+					a.open-modal.link_login(href="#")
+					a.open-modal.link_form(href="#") оставить заявку
+
+	.header.header_category.no-scroll.clearfix
+		.container
+			.block-top.inline-layout
+				.logo
+					a.inline-layout(href="#")
+						.img-holder
+							img(src="img/content/logo-xfix.png" alt="XFIX")
+						span .com.
+							i ua
+				.block-contact.inline-layout
+					form.city-form
+						.form-holder.city-select
+							select(name="city")
+								option(value=""   checked) Ваш город
+								option(value="2") Киев
+								option(value="3") Черкассы
+					.form-holder.phone-select
+						select(name="phone")
+							option(value=""   checked) 8 800  555 55 55
+							option(value="2") 8 800  555 55 55
+							option(value="3") 8 800  555 55 55
+
+				.list-social
+					ul.inline-layout
+						li
+							a(href="#" target="_balnk")
+								i.fa.fa-vk
+
+						li
+							a(href="#" target="_balnk")
+								i.fa.fa-facebook
+						li
+							a(href="#" target="_balnk")
+								i.fa.fa-instagram
+						li
+							a(href="#" target="_balnk")
+								i.fa.fa-google-plus
+						li
+							a(href="#" target="_balnk")
+								i.fa.fa-youtube-play
+						li
+							a(href="#" target="_balnk")
+								i.fa.fa-odnoklassniki
+
+	.block_info
+		include ./block_menu_category.jade
+		include ./block_list_text_header.jade
+

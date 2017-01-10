@@ -1,0 +1,29 @@
+
+
+
+.block_category_text_header
+    .container.inline-layout.col-2
+
+
+        form.form_calculation
+            .form-holder
+                select(name="device" data-validate="select")
+                    option(value=""   checked) устройство
+                    option(value="2") устройство 2
+                    option(value="3") устройство 3
+            .form-holder
+                select(name="problem" data-validate="select")
+                    option(value=""   checked) Проблема
+                    option(value="2") Проблема 2
+                    option(value="3") Проблема 3
+            .form-holder
+                select(name="city" data-validate="select")
+                    option(value=""   checked) Ваш город
+                    option(value="2") Киев
+                    option(value="3") Черкассы
+
+            .form-holder
+                input(type="submit" value="показать цену")
+
+        .block_img
+            img(src="img/content/img_category.png" alt="Ремонт телефона HTC")
