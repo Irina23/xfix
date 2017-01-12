@@ -1,11 +1,33 @@
 
-mixin list_item_model (name, url)
+mixin list_item_model ()
+    .item.inline-layout
+        .block_info_model
+            .block_info_name_feedback.inline-layout
+                a.name(href="#" ) Азбука Ремонта (Бульвар Дмитрия Донского)
+                .label_sale
+                .block_info_feedback
+                    .feedback 276 отзыва
+                    select.rating_show
+                        option(value="1") 1
+                        option(value="2") 2
+                        option(value="3") 3
+                        option(value="4" selected=) 4
+                        option(value="5") 5
+            .block_info_contact.inline-layout
+                .image-holder
+                    img.fake-img(src="img/content/img-service.png" alt="Азбука Ремонта (Бульвар Дмитрия Донского)")
+                    .img(style="background: url('img/content/img-service.png') no-repeat;background-position: center ;background-repeat: no-repeat;background-size: cover;")
 
-        a(href= url )= name
+
+                .block_contact
+                    address г. Киев , ул. Нижняя Сыромятническая 10с12. Вход в центре дизайна и архитектуры "ARTPLAY"
+                    .time_work пн-пт 11:00-21:00
+                        br
+                        | сб 11:00-18:00
+                    a(href="tel:+38 /067/ 555 55 55") +38 /067/ 555 55 55
+        .block_link_model
 
 .block_list_item_model
-    +list_item_model(
-    'iPhone 3G',
-    '#'
-    )
+    +list_item_model()
+    +list_item_model()
     include ./pagination.jade

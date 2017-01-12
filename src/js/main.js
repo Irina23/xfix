@@ -5,7 +5,7 @@ if ($.browser.iphone || $.browser.ipad || $.browser.ipod ) $('body').addClass('i
 
 $(document).ready( function () {
 	$("form").validate();
-	$('select').selectbox();
+	$('select:not(.rating_show)').selectbox();
 
 	$(".show_buttom").on('click', function(){
 		var $this = $(this).closest(".list_category");
@@ -110,6 +110,18 @@ $(document).ready( function () {
 	$(".block_model_repair .device_name > span").on('click', function(){
 		$(this).next().slideToggle();
 	});
+
+
+
+
+	//rating
+	$('.rating').barrating({
+	 	theme: ''
+	 });
+	 $('.rating_show').barrating({
+		 theme: '',
+		 readonly: true
+	 });
 
 });
 

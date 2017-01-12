@@ -1,4 +1,58 @@
 @import _mixins
 
 .block_list_item_model
-  width: calc(100% - 430px)
+  width: calc(100% - 270px)
+  .item
+    background-color:  #ffffff
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2)
+    margin-bottom: 20px
+    padding: 20px
+    .block_info_name_feedback
+      border-bottom: 1px solid #e8e8e8
+      padding-bottom: 20px
+      margin-bottom: 20px
+      .name
+        font-family: Rubik, sans-serif
+        color:  #156cb0
+        font-size: 24px
+        font-weight: 400
+        text-decoration: none
+        width: calc(100% - 265px)
+      .label_sale
+        width: 49px
+        height: 68px 
+        background: url("../img/icons/label_sale.png") no-repeat
+      .rating_show
+        display: none
+      .block_info_feedback
+        padding-left: 10px
+        margin-left: 10px
+        border-left: 1px solid #e8e8e8
+        .feedback
+          font-family: Rubik, sans-serif
+          color:  #156cb0
+          font-size: 24px
+          font-weight: 400
+          margin-bottom: 10px
+        .br-widget
+          .br-current-rating
+            display: none
+          a
+            display: inline-block
+            width: 30px
+            height: 29px
+            background: url("../img/icons/rating.png") no-repeat
+            margin: 0 5px
+            &:first-child
+              margin-left: 0
+            &.br-selected
+              background: url("../img/icons/rating2.png") no-repeat
+
+
+    .block_info_contact
+		.image-holder
+		  width: 190px
+		  height: 180px
+		  margin-right: 30px
+		.block_contact
+			width: calc(100% - 220px)
