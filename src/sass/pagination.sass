@@ -1,0 +1,40 @@
+@import _mixins
+
+.list_pagination
+  ul
+    text-align: center
+    margin-bottom: 20px
+  li
+    padding: 0 10px
+    a
+      font-size: 36px
+      text-decoration: none
+      //padding-bottom: 5px
+      border-bottom: 2px solid transparent
+      line-height: 49px
+      font-family: Rubik, sans-serif
+      font-weight: normal
+      display: block
+
+    &.first,&.last,&.prev,&.next
+      a
+        width: 40px
+        height: 49px
+
+    &.first,&.last
+      a
+        background: url("../img/icons/pagination-first.png") no-repeat center
+    &.last, &.next
+      a
+        transform: rotate(180deg)
+
+    &.prev,&.next
+      a
+        width: 30px
+        background: url("../img/icons/pagination-prev.png") no-repeat center
+    &.disabled
+      opacity: 0.7
+    &.active
+      a
+        border-bottom: 2px solid $main-color
+

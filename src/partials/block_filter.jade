@@ -1,0 +1,27 @@
+
+.block_filter
+    form
+        .item
+            h4 Вы выбрали город: Киев
+            .form-holder
+                select(name="region" data-validate="select")
+                    option(value=""   checked) Выберите район
+                    option(value="2") район 1
+                    option(value="3") район 2
+        .item
+            h4 Режим работы
+            .checkbox
+                input(type="checkbox" id="checkbox1" name="time1")
+                label(for="checkbox1") до 10:00
+            .checkbox
+                input(type="checkbox" id="checkbox2" name="time2")
+                label(for="checkbox2") после 19:00
+            .checkbox
+                input(type="checkbox" id="checkbox3" name="time3")
+                label(for="checkbox3") работают в субботу
+            .checkbox
+                input(type="checkbox" id="checkbox4" name="time4")
+                label(for="checkbox4") работают в воскресенье
+            .checkbox
+                input(type="checkbox" id="checkbox5" name="time5")
+                label(for="checkbox5") круглосуточно

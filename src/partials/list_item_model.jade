@@ -1,0 +1,11 @@
+
+mixin list_item_model (name, url)
+
+        a(href= url )= name
+
+.block_list_item_model
+    +list_item_model(
+    'iPhone 3G',
+    '#'
+    )
+    include ./pagination.jade

@@ -15,7 +15,10 @@ html(lang='ru')
 			include ./partials/block_model_category.jade
 			include ./partials/block_problem_service.jade
 			include ./partials/block_model_repair.jade
-
+			.list-item-model
+				.container.inline-layout
+					include ./partials/block_filter.jade
+					include ./partials/list_item_model.jade
 
 		include ./partials/footer.jade
 		include ./partials/modals.jade
