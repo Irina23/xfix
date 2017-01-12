@@ -14,7 +14,8 @@ mixin list_item_model ()
                         option(value="4" selected=) 4
                         option(value="5") 5
             .block_info_contact.inline-layout
-                .image-holder
+
+                a.image-holder(href="#")
                     img.fake-img(src="img/content/img-service.png" alt="Азбука Ремонта (Бульвар Дмитрия Донского)")
                     .img(style="background: url('img/content/img-service.png') no-repeat;background-position: center ;background-repeat: no-repeat;background-size: cover;")
 
@@ -24,8 +25,23 @@ mixin list_item_model ()
                     .time_work пн-пт 11:00-21:00
                         br
                         | сб 11:00-18:00
-                    a(href="tel:+38 /067/ 555 55 55") +38 /067/ 555 55 55
+                    .phone
+                        a(href="tel:+38 /067/ 555 55 55") +38 /067/ 555 55 55
+                        .info-tooltip
+                            .icon-tooltip
+                            .holder-tooltip Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
         .block_link_model
+            .list_problem_price.inline-layout.col-2
+                .item-problem
+                    .name Замена програмного обеспечения
+                    .price 150
+                        span грн
+                .item-problem
+                    .name Замена материнской платы
+                    .price 150
+                        span грн
+
+
 
 .block_list_item_model
     +list_item_model()

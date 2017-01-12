@@ -112,6 +112,10 @@ $(document).ready( function () {
 	});
 
 
+	$(".info-tooltip .icon-tooltip").on('click', function(){
+		$(this).next().toggleClass('open');
+	});
+
 
 
 	//rating
