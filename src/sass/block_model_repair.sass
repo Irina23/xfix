@@ -27,6 +27,8 @@
       width: 25%
       border-right:  2px solid #ffffff
       padding: 0 20px
+      &:nth-child(1)
+        border-left:  2px solid #ffffff
       &:nth-child(2)
         width: 38%
       &:nth-child(3)
@@ -79,8 +81,45 @@
           line-height: 50px
 
       .device_name
+        //position: relative
+
         span
+          cursor: pointer
           display: block
           padding-left: 70px
           background: url("../img/icons/icon-phone-white.png") no-repeat center left
           line-height: 50px
+
+        .list_model_device
+          display: none
+          position: absolute
+          top: 100%
+          left: 0
+          width: 100%
+          .colum
+            border: 2px solid #fff
+            margin-left: -2px
+            //border-left: 0
+            &:first-child
+              margin-left: 0
+          h4
+            background: #1668af
+            color: #fff
+            font-size: 16px
+            padding: 5px 10px
+            font-weight: normal
+            border-bottom: 2px solid #fff
+          .list_model
+            a
+              display: block
+              background: #00b2c0
+              color: #fff
+              font-size: 16px
+              padding: 10px
+              border-bottom: 2px solid #fff
+              transition: all 0.35s
+              &:hover, &.active
+                transition: all 0.35s
+                background: $main-color
+              &:last-child
+                border-bottom: 0

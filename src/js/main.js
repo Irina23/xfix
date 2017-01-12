@@ -106,5 +106,10 @@ $(document).ready( function () {
 		}
 	});
 
+
+	$(".block_model_repair .device_name > span").on('click', function(){
+		$(this).next().slideToggle();
+	});
+
 });
 
