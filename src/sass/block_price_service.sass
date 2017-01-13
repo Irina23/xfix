@@ -1,0 +1,150 @@
+@import _mixins
+
+.block_price_service
+  padding: 50px 0 0
+  h3
+    font-family: Rubik, sans-serif
+    color:  #156cb0
+    font-size: 48px
+    font-weight: 300
+    margin-bottom: 40px
+    text-align: center
+    @media screen and (max-width: 1920px)
+      font-size: 36px
+
+
+  .block_price_tab
+    .tab-menu-main
+      text-align: center
+      margin-bottom: 50px
+      li
+        line-height: 50px
+        font-size: 36px
+        color:  #156cb0
+        font-family: Rubik, sans-serif
+        font-weight: 400
+        padding: 0 40px
+        cursor: pointer
+
+        &.active
+          text-decoration: underline
+        @media screen and (max-width: 1920px)
+          font-size: 24px
+
+    .list_model_link
+      margin-bottom: 50px
+      .row
+        position: relative
+        //display: flex
+        //-webkit-box-orient: horizontal
+        //-webkit-box-direction: normal
+        //flex-direction: row
+        //justify-content: space-around
+        //flex-grow: 14
+        //align-content: center
+        //align-self: center
+        margin-bottom: 20px
+        @media screen and (max-width: 959px)
+          display: block
+        &:last-child
+          margin-bottom: 0
+
+
+        .item
+          text-align: center
+          width: calc((100% - 45px)/13)
+          color:  #7d7d7d
+          font-size: 24px
+          font-weight: 400
+          text-decoration: none
+          transition: all 0.35s
+          cursor: pointer
+          line-height: 30px
+          padding: 0 5px
+          vertical-align: middle
+          &:first-child
+            cursor: default
+            width: 45px
+            &:hover
+              background: none
+              padding: 0
+
+          &:hover, &.active
+            transition: all 0.35s
+            color:  #156cb0
+            background-color:  #e9fdff
+
+          @media screen and (max-width: 1920px)
+            font-size: 16px
+          @media screen and (max-width: 959px)
+            font-size: 14px
+
+
+          @media screen and (max-width: 959px)
+            max-width: inherit
+            display: inline-block
+            vertical-align: middle
+            width: 25%
+
+
+  .block_table
+    .row
+      padding: 0 15px
+      &:first-child
+        border-bottom: 1px solid #bebebe
+
+      .th-tablet
+        display: inline-block
+        vertical-align: middle
+        width: 75%
+        font-family: Rubik, sans-serif
+        color:  #156cb0
+        font-size: 24px
+        font-weight: normal
+        @media screen and (max-width: 1920px)
+          font-size: 18px
+        &.other-price
+          padding: 20px 40px
+          font-family: Rubik, sans-serif
+          color:  #156cb0
+          font-size: 18px
+          font-weight: normal
+          background: #f5f9fc
+          width: 24%
+          box-sizing: border-box
+          text-align: center
+          @media screen and (max-width: 1920px)
+            font-size: 16px
+            padding: 10px 20px
+
+      .td-tablet
+        display: inline-block
+        width: 75%
+
+        a
+          text-decoration: none
+          font-family: Rubik, sans-serif
+          color:  #676767
+          font-size: 20px
+          font-weight: normal
+          @media screen and (max-width: 1920px)
+            font-size: 16px
+          span
+            width: 70%
+            display: inline-block
+
+            &.price
+              width: 29%
+              color: $main-color
+              display: inline-block
+
+
+        &.other-price
+          padding: 10px 40px
+          color:  #156cb0
+          background: #f5f9fc
+          width: 24%
+          box-sizing: border-box
+          text-align: center
+          @media screen and (max-width: 1920px)
+            padding: 10px 20px

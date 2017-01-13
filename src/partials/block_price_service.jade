@@ -1,0 +1,317 @@
+mixin itemModel (name, url)
+    li.item(href= url data-toggle="tab")= name
+
+
+.block_price_service
+    .container
+        h3 Прайс на услуги сервиса
+
+        .tabs.block_price_tab
+            .tabs-menu.tab-menu-main
+                    ul.nav.nav-tabs.inline-layout
+                        li(class="active" href="#nokia" data-toggle="tab") Nokia
+                        li(href="#htc" data-toggle="tab") HTC
+                        li(href="#samsung" data-toggle="tab") Samsung
+                        li(href="#lg" data-toggle="tab") LG
+                        li(href="#philips" data-toggle="tab") Philips
+                        li(href="#sony" data-toggle="tab") Sony
+
+
+
+            .tab-content
+
+                .tab-pane.active#nokia
+                    .tabs-menu
+                        .nav.nav-tabs.list_model_link
+                                ul.row.inline-layout
+                                    li.item
+                                        img(src="img/content/img_tablet.jpg" alt="img_tablet")
+                                    li.item.active(href="#one1" data-toggle="tab") One mini
+
+                                    +itemModel(
+                                    'One X',
+                                    '#onex'
+                                    )
+                                    +itemModel(
+                                    'One S',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'One V',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'Desire C',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'Sensation',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'Wildfire S',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'One M7',
+                                    '#'
+                                    )
+
+                                    +itemModel(
+                                    'One M8',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'Desire X',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'Desire HD',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'Butterfly S',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'Evo 3d',
+                                    '#'
+                                    )
+
+                                ul.row.inline-layout
+                                    li.item
+                                        img(src="img/content/img_phone.jpg" alt="img_phone")
+                                    +itemModel(
+                                    'One mini',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'One X',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'One S',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'One V',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'Desire C',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'Sensation',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'Wildfire S',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'One M7',
+                                    '#'
+                                    )
+
+                                    +itemModel(
+                                    'One M8',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'Desire X',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'Desire HD',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'Butterfly S',
+                                    '#'
+                                    )
+                                    +itemModel(
+                                    'Evo 3d',
+                                    '#'
+                                    )
+
+
+
+                    .tab-content
+                        .tab-pane#one1.active
+                            .block-tab-content.inline-layout.col-2
+                                .block_table
+                                    .row
+                                        .th-tablet HTC - Ремонт аппаратной части
+                                        .th-tablet.other-price в других сервисах
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Не работает Wi-Fi
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Не включается
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Попала влага
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Не включается
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Забыт пароль
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Зависает (обновить ПО)
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+
+
+                                .block_table
+                                    .row
+                                        .th-tablet HTC - Ремонт аппаратной части
+                                        .th-tablet.other-price в других сервисах
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Не работает Wi-Fi
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Не включается
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Попала влага
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Не включается
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Забыт пароль
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Зависает (обновить ПО)
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+
+
+                        .tab-pane#onex
+                            .block-tab-content.inline-layout.col-2
+                                .block_table
+                                    .row
+                                        .th-tablet HTC - Ремонт аппаратной части
+                                        .th-tablet.other-price в других сервисах
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Не работает Wi-Fi
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Не включается
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Попала влага
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Не включается
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Забыт пароль
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Зависает (обновить ПО)
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 230 грн
+
+
+                                .block_table
+                                    .row
+                                        .th-tablet HTC - Ремонт аппаратной части
+                                        .th-tablet.other-price в других сервисах
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Не работает Wi-Fi
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 250 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Не включается
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 250 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Попала влага
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 250 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Не включается
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 250 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Забыт пароль
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 250 грн
+                                    .row
+                                        .td-tablet
+                                            a(href="#" )
+                                                span Зависает (обновить ПО)
+                                                span.price от 200 грн
+                                        .td-tablet.other-price 250 грн
+
+
+                .tab-pane#htc htc
+                .tab-pane#samsung samsung
+                .tab-pane#lg lg
+                .tab-pane#philips philips
+                .tab-pane#sony sony
