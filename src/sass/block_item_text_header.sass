@@ -1,0 +1,91 @@
+@import _mixins
+
+.block_item_text_header
+	//padding-top: 40px
+	position: relative
+	margin-top: -60px
+
+	.block_video
+		width: calc(50% - 25px)
+		//float: right
+		margin-left: 50px
+		vertical-align: bottom
+		@media screen and (max-width: 800px)
+			float: none
+			width: 100%
+			margin-bottom: 40px
+			margin-right: auto
+		@media screen and (max-width: 600px)
+			height: 250px
+			iframe
+				height: 100%
+		iframe
+			width: 100%
+			//border-radius: 10px
+			box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4)
+			//overflow: hidden
+
+
+
+	.block-text
+		//float: left
+		//margin-left: 50px
+		width: calc(50% - 25px)
+		overflow: hidden
+		display: inline-block
+		margin-bottom: 30px
+		@media screen and (max-width: 1920px)
+		  margin-top: 0
+		@media screen and (max-width: 800px)
+			width: 100%
+			margin-left: auto
+
+		h3
+			position: relative
+			color: $main-color-hover
+			font-size: 42px
+			font-family: 'Rubik', sans-serif
+			line-height: 1.3em
+			font-weight: 300
+			border: 0
+			padding-bottom: 0
+			margin-bottom: 30px
+			@media screen and (max-width: 1920px)
+		  		font-size: 36px
+			@media screen and (max-width: 1250px)
+				font-size: 28px
+			@media screen and (max-width: 400px)
+				font-size: 24px
+
+				
+		p
+			font-family: 'Rubik', sans-serif
+			font-weight: 300
+			font-size: 19px
+			color: #fff
+			margin-bottom: 20px
+			line-height: 1.3em
+			@media screen and (max-width: 1920px)
+		  		font-size: 16px
+			@media screen and (max-width: 1250px)
+				font-size: 14px
+
+		.hide_buttom
+			display: none
+		&.open
+			//display: inline
+			//.text-overflow
+				display: inline
+			.show_buttom
+				display: none
+			.hide_buttom
+				display: block
+
+		.text-overflow
+			position: relative
+			height: 280px
+			overflow: hidden
+			margin-bottom: 30px
+
+			&.open
+				height: auto
