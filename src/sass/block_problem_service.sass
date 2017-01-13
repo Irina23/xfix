@@ -23,13 +23,15 @@
       background: linear-gradient(90deg, #1861ad 0%, #00b2c0 100%)
       line-height: 45px
       color: #fff
-      font-size: 18px
+      font-size: 24px
       font-weight: normal
       margin-bottom: 20px
+      @media screen and (max-width: 1920px)
+        font-size: 18px
     .list_problem
       a
         //display: block
-        font-size: 16px
+        font-size: 20px
         text-decoration: none
         color: #156cb0
         display: flex
@@ -37,7 +39,8 @@
         -webkit-box-direction: normal
         flex-direction: row
         justify-content: space-between
-
+        @media screen and (max-width: 1920px)
+          font-size: 16px
 
         .price
           color: $main-color

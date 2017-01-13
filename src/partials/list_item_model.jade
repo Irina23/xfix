@@ -33,9 +33,11 @@ mixin list_item_model ()
         .block_link_model
             .list_problem_price.inline-layout.col-2
                 .item-problem
-                    .name Замена програмного обеспечения
-                    .price 150
-                        span грн
+                    .problem-holder
+                        div
+                            .name Замена програмного обеспечения
+                            .price 150
+                                span грн
                 .item-problem
                     .name Замена материнской платы
                     .price 150
@@ -44,6 +46,291 @@ mixin list_item_model ()
 
 
 .block_list_item_model
-    +list_item_model()
-    +list_item_model()
+    .item.inline-layout
+        .block_info_model
+            .block_info_name_feedback.inline-layout
+                a.name(href="#" ) Азбука Ремонта (Бульвар Дмитрия Донского)
+                .label_sale
+                .block_info_feedback
+                    .feedback 276 отзыва
+                    select.rating_show
+                        option(value="1") 1
+                        option(value="2") 2
+                        option(value="3") 3
+                        option(value="4" selected=) 4
+                        option(value="5") 5
+            .block_info_contact.inline-layout
+
+                a.image-holder(href="#")
+                    img.fake-img(src="img/content/img-service.png" alt="Азбука Ремонта (Бульвар Дмитрия Донского)")
+                    .img(style="background: url('img/content/img-service.png') no-repeat;background-position: center ;background-repeat: no-repeat;background-size: cover;")
+
+
+                .block_contact
+                    address г. Киев , ул. Нижняя Сыромятническая 10с12. Вход в центре дизайна и архитектуры "ARTPLAY"
+                    .time_work пн-пт 11:00-21:00
+                        br
+                        | сб 11:00-18:00
+                    .phone
+                        a(href="tel:+38 /067/ 555 55 55") +38 /067/ 555 55 55
+                        .info-tooltip
+                            .icon-tooltip
+                            .holder-tooltip Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+        .block_link_model
+            .list_problem_price.inline-layout.col-2.social-active
+                .item-problem
+                    .problem-holder
+                        a(href="#")
+                            .name Замена програмного обеспечения
+                            .price 150
+                                span грн
+                .item-problem
+                    .problem-holder
+                        a(href="#")
+                            .name Замена материнской платы
+                            .price 150
+                                span грн
+
+            .block-social.inline-layout
+                .list-social
+                    ul.inline-layout
+                        li
+                            a(href="#" target="_balnk")
+                                i.fa.fa-vk
+
+                        li
+                            a(href="#" target="_balnk")
+                                i.fa.fa-facebook
+                        li
+                            a(href="#" target="_balnk")
+                                i.fa.fa-instagram
+                        li
+                            a(href="#" target="_balnk")
+                                i.fa.fa-google-plus
+                        li
+                            a(href="#" target="_balnk")
+                                i.fa.fa-youtube-play
+                        li
+                            a(href="#" target="_balnk")
+                                i.fa.fa-odnoklassniki
+                .list_icon.inline-layout
+                    a.icon-chat(href="#")
+                    a.icon-like(href="#")
+
+                a.link_form(href="#") ПЕРЕЙТИ
+
+    .item.inline-layout
+        .block_info_model
+            .block_info_name_feedback.inline-layout
+                a.name(href="#" ) Азбука Ремонта (Бульвар Дмитрия Донского)
+                .label_sale
+                .block_info_feedback
+                    .feedback 276 отзыва
+                    select.rating_show
+                        option(value="1") 1
+                        option(value="2") 2
+                        option(value="3") 3
+                        option(value="4" selected=) 4
+                        option(value="5") 5
+            .block_info_contact.inline-layout
+
+                a.image-holder(href="#")
+                    img.fake-img(src="img/content/img-service.png" alt="Азбука Ремонта (Бульвар Дмитрия Донского)")
+                    .img(style="background: url('img/content/img-service.png') no-repeat;background-position: center ;background-repeat: no-repeat;background-size: cover;")
+
+
+                .block_contact
+                    address г. Киев , ул. Нижняя Сыромятническая 10с12. Вход в центре дизайна и архитектуры "ARTPLAY"
+                    .time_work пн-пт 11:00-21:00
+                        br
+                        | сб 11:00-18:00
+                    .phone
+                        a(href="tel:+38 /067/ 555 55 55") +38 /067/ 555 55 55
+                        .info-tooltip
+                            .icon-tooltip
+                            .holder-tooltip Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+        .block_link_model
+            .list_problem_price.social-active
+                .item-problem
+                    .problem-holder
+                        a(href="#")
+                            .name Замена програмного обеспечения
+                            .price 150
+                                span грн
+
+
+
+            .block-social.inline-layout
+                .list-social
+                    ul.inline-layout
+                        li
+                            a(href="#" target="_balnk")
+                                i.fa.fa-vk
+
+                        li
+                            a(href="#" target="_balnk")
+                                i.fa.fa-facebook
+                        li
+                            a(href="#" target="_balnk")
+                                i.fa.fa-instagram
+                        li
+                            a(href="#" target="_balnk")
+                                i.fa.fa-google-plus
+                        li
+                            a(href="#" target="_balnk")
+                                i.fa.fa-youtube-play
+                        li
+                            a(href="#" target="_balnk")
+                                i.fa.fa-odnoklassniki
+                .list_icon.inline-layout
+                    a.icon-chat(href="#")
+                    a.icon-like(href="#")
+
+                a.link_form(href="#") ПЕРЕЙТИ
+
+    .item.inline-layout
+        .block_info_model
+            .block_info_name_feedback.inline-layout
+                a.name(href="#" ) Азбука Ремонта (Бульвар Дмитрия Донского)
+                .label_sale
+                .block_info_feedback
+                    .feedback 276 отзыва
+                    select.rating_show
+                        option(value="1") 1
+                        option(value="2") 2
+                        option(value="3") 3
+                        option(value="4" selected=) 4
+                        option(value="5") 5
+            .block_info_contact.inline-layout
+
+                a.image-holder(href="#")
+                    img.fake-img(src="img/content/img-service.png" alt="Азбука Ремонта (Бульвар Дмитрия Донского)")
+                    .img(style="background: url('img/content/img-service.png') no-repeat;background-position: center ;background-repeat: no-repeat;background-size: cover;")
+
+
+                .block_contact
+                    address г. Киев , ул. Нижняя Сыромятническая 10с12. Вход в центре дизайна и архитектуры "ARTPLAY"
+                    .time_work пн-пт 11:00-21:00
+                        br
+                        | сб 11:00-18:00
+                    .phone
+                        a(href="tel:+38 /067/ 555 55 55") +38 /067/ 555 55 55
+                        .info-tooltip
+                            .icon-tooltip
+                            .holder-tooltip Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+        .block_link_model
+            .list_problem_price.inline-layout.col-2
+                .item-problem
+                    .problem-holder
+                        a(href="#")
+                            .name Замена програмного обеспечения
+                            .price 150
+                                span грн
+                .item-problem
+                    .problem-holder
+                        a(href="#")
+                            .name Замена материнской платы
+                            .price 150
+                                span грн
+
+
+
+
+    .item.inline-layout
+        .block_info_model
+            .block_info_name_feedback.inline-layout
+                a.name(href="#" ) Азбука Ремонта (Бульвар Дмитрия Донского)
+                .label_sale
+                .block_info_feedback
+                    .feedback 276 отзыва
+                    select.rating_show
+                        option(value="1") 1
+                        option(value="2") 2
+                        option(value="3") 3
+                        option(value="4" selected=) 4
+                        option(value="5") 5
+            .block_info_contact.inline-layout
+
+                a.image-holder(href="#")
+                    img.fake-img(src="img/content/img-service.png" alt="Азбука Ремонта (Бульвар Дмитрия Донского)")
+                    .img(style="background: url('img/content/img-service.png') no-repeat;background-position: center ;background-repeat: no-repeat;background-size: cover;")
+
+
+                .block_contact
+                    address г. Киев , ул. Нижняя Сыромятническая 10с12. Вход в центре дизайна и архитектуры "ARTPLAY"
+                    .time_work пн-пт 11:00-21:00
+                        br
+                        | сб 11:00-18:00
+                    .phone
+                        a(href="tel:+38 /067/ 555 55 55") +38 /067/ 555 55 55
+                        .info-tooltip
+                            .icon-tooltip
+                            .holder-tooltip Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+        .block_link_model
+            .list_problem_price.inline-layout.col-2
+                .item-problem
+                    .problem-holder
+                        a(href="#")
+                            .name Замена програмного обеспечения
+                            .price 150
+                                span грн
+                .item-problem
+                    .problem-holder
+                        a(href="#")
+                            .name Замена материнской платы
+                            .price 150
+                                span грн
+
+
+
+
+
+    .item.inline-layout
+        .block_info_model
+            .block_info_name_feedback.inline-layout
+                a.name(href="#" ) Азбука Ремонта (Бульвар Дмитрия Донского)
+                .label_sale
+                .block_info_feedback
+                    .feedback 276 отзыва
+                    select.rating_show
+                        option(value="1") 1
+                        option(value="2") 2
+                        option(value="3") 3
+                        option(value="4" selected=) 4
+                        option(value="5") 5
+            .block_info_contact.inline-layout
+
+                a.image-holder(href="#")
+                    img.fake-img(src="img/content/img-service.png" alt="Азбука Ремонта (Бульвар Дмитрия Донского)")
+                    .img(style="background: url('img/content/img-service.png') no-repeat;background-position: center ;background-repeat: no-repeat;background-size: cover;")
+
+
+                .block_contact
+                    address г. Киев , ул. Нижняя Сыромятническая 10с12. Вход в центре дизайна и архитектуры "ARTPLAY"
+                    .time_work пн-пт 11:00-21:00
+                        br
+                        | сб 11:00-18:00
+                    .phone
+                        a(href="tel:+38 /067/ 555 55 55") +38 /067/ 555 55 55
+                        .info-tooltip
+                            .icon-tooltip
+                            .holder-tooltip Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+        .block_link_model
+            .list_problem_price.inline-layout.col-2
+                .item-problem
+                    .problem-holder
+                        a(href="#")
+                            .name Замена програмного обеспечения
+                            .price 150
+                                span грн
+                .item-problem
+                    .problem-holder
+                        a(href="#")
+                            .name Замена материнской платы
+                            .price 150
+                                span грн
+
+
+
+
     include ./pagination.jade

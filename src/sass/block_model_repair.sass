@@ -4,7 +4,9 @@
   background: linear-gradient(90deg, #f25c29 0%, #fed24b 100%)
   position: relative
   color: #fff
-  font-size: 18px
+  font-size: 24px
+  @media screen and (max-width: 1920px)
+    font-size: 18px
   &:before
     position: absolute
     top: 0
@@ -17,7 +19,7 @@
 
   .container
     position: relative
-    z-index: 2
+    z-index: 12
 
 
   .block_table
@@ -39,9 +41,15 @@
           padding: 0 20px
       .th-tablet
         line-height: 50px
+        font-size: 24px
+        @media screen and (max-width: 1920px)
+          font-size: 18px
       .td-tablet
         padding: 15px 0
         line-height: 1em
+        font-size: 24px
+        @media screen and (max-width: 1920px)
+          font-size: 18px
 
       .device_like
         text-align: center
@@ -49,6 +57,9 @@
         text-decoration: none
         color: #fff
         line-height: 1em
+        font-size: 24px
+        @media screen and (max-width: 1920px)
+          font-size: 18px
 
       .device_price
         display: flex
@@ -96,7 +107,9 @@
           top: 100%
           left: 0
           width: 100%
+          z-index: 11
           .colum
+            box-sizing: border-box
             border: 2px solid #fff
             margin-left: -2px
             //border-left: 0
@@ -105,19 +118,23 @@
           h4
             background: #1668af
             color: #fff
-            font-size: 16px
+            font-size: 24px
             padding: 5px 10px
             font-weight: normal
             border-bottom: 2px solid #fff
+            @media screen and (max-width: 1920px)
+              font-size: 16px
           .list_model
             a
               display: block
               background: #00b2c0
               color: #fff
-              font-size: 16px
+              font-size: 24px
               padding: 10px
               border-bottom: 2px solid #fff
               transition: all 0.35s
+              @media screen and (max-width: 1920px)
+                font-size: 16px
               &:hover, &.active
                 transition: all 0.35s
                 background: $main-color

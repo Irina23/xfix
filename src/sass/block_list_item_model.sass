@@ -7,6 +7,11 @@
 		box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2)
 		margin-bottom: 20px
 		padding: 20px
+		box-sizing: border-box
+		height: 350px
+		overflow: hidden
+		@media screen and (max-width: 1920px)
+			height: 330px
 		.block_info_name_feedback
 			border-bottom: 1px solid #e8e8e8
 			padding-bottom: 20px
@@ -14,10 +19,16 @@
 			.name
 				font-family: Rubik, sans-serif
 				color:  #156cb0
-				font-size: 20px
+				font-size: 24px
 				font-weight: 400
 				text-decoration: none
-				width: calc(100% - 215px)
+				width: calc(100% - 245px)
+				max-height: 66px
+				overflow: hidden
+				@media screen and (max-width: 1920px)
+				  font-size: 20px
+				  width: calc(100% - 215px)
+				  max-height: 56px
 			.label_sale
 				width: 49px
 				height: 68px 
@@ -31,20 +42,26 @@
 				.feedback
 					font-family: Rubik, sans-serif
 					color:  #156cb0
-					font-size: 18px
+					font-size: 24px
 					font-weight: 400
 					margin-bottom: 10px
+
+					@media screen and (max-width: 1920px)
+					  font-size: 18px
 				.br-widget
 					.br-current-rating
 						display: none
 					a
 						display: inline-block
-						width: 25px
-						height: 24px
+						width: 30px
+						height: 29px
 						background: url("../img/icons/rating.png") no-repeat
 						background-size: 100%
 						margin: 0 2px
 						cursor: default
+						@media screen and (max-width: 1920px)
+						  width: 25px
+						  height: 24px
 						&:first-child
 							margin-left: 0
 						&.br-selected
@@ -54,29 +71,46 @@
 
     .block_info_contact
 		.image-holder
-			width: 160px
-			height: 160px
+			width: 190px
+			height: 180px
 			margin-right: 20px
+			@media screen and (max-width: 1920px)
+				width: 160px
+				height: 160px
 		.block_contact
-			width: calc(100% - 180px)
+			width: calc(100% - 210px)
+			@media screen and (max-width: 1920px)
+			  width: calc(100% - 180px)
 			address, .time_work, .phone a
 				font-style: normal
 				font-family: Rubik, sans-serif
 				color:  #676767
 				font-weight: 400
-				font-size: 16px
+				font-size: 20px
 				text-decoration: none
 				display: block
-				padding-left: 40px
-				margin-bottom: 15px
-				min-height: 35px
+				padding-left: 70px
+				margin-bottom: 30px
+				min-height: 45px
 				line-height: 1.2em
+				@media screen and (max-width: 1920px)
+				  min-height: 35px
+				  padding-left: 40px
+				  margin-bottom: 15px
+				  font-size: 16px
 			address
 				background: url("../img/icons/icon-point.png") no-repeat left center
-				background-size: 30px auto
+				background-size: 40px auto
+				max-height: 48px
+				overflow: hidden
+				@media screen and (max-width: 1920px)
+				  background-size: 30px auto
+				  max-height: 76px
 			.time_work
 				background: url("../img/icons/icon-clock.png") no-repeat left center
-				background-size: 30px auto
+				background-size: 40px auto
+				@media screen and (max-width: 1920px)
+				  background-size: 30px auto
 			.phone
 
 				.info-tooltip
@@ -85,11 +119,14 @@
 					position: relative
 
 					.icon-tooltip
-						width: 20px
-						height: 20px
+						width: 24px
+						height: 24px
 						background: url("../img/icons/icon-info.png") no-repeat
 						background-size: 100%
 						cursor: pointer
+						@media screen and (max-width: 1920px)
+						  	width: 20px
+					  		height: 20px
 
 					.holder-tooltip
 						display: none
@@ -99,11 +136,13 @@
 						background:  #f5f5f5
 						padding: 10px
 						border-radius: 6px
-						font-size: 14px
+						font-size: 16px
 						width: 200px
 						left: 50%
 						margin-left: -100px
 						line-height: 1.2em
+						@media screen and (max-width: 1920px)
+						  font-size: 14px
 						&.open
 							display: block
 
@@ -111,18 +150,111 @@
 					display: inline-block
 					margin-bottom: 0
 					background: url("../img/icons/icon-tel.png") no-repeat left center
-					background-size: 30px auto
+					background-size: 40px auto
 					font-family: Rubik, sans-serif
 					color:  $main-color
 					font-weight: 400
-					font-size: 28px
+					font-size: 42px
+					@media screen and (max-width: 1920px)
+					  background-size: 30px auto
+					  font-size: 24px
 				
 	.block_info_model
-		width: 70%
+		width: 65%
+		border-right: 1px solid #e8e8e8
+		padding-right: 20px
+		height: 100%
+
 
 	.block_link_model
-		width: 30%
+		width: 35%
+		padding-left: 5px
+		height: 100%
+
+		.list_problem_price
+			height: 100%
+			&.social-active
+				height: calc(100% - 90px)
+				@media screen and (max-width: 1920px)
+					height: calc(100% - 80px)
+			&.col-2
+				.item-problem
+					.name
+						margin-bottom: 30px
+			.item-problem
+				border-right: 1px solid #e8e8e8
+				padding: 0 10px
+				height: 100%
+				.problem-holder
+					display: table
+					width: 100%
+					height: 100%
+					> div, > a
+					  display: table-cell
+					  vertical-align: middle
+					  text-decoration: none
+				&:last-child
+					border-right: 0
 
 
+				.name
+					font-family: Rubik, sans-serif
+					color:  #676767
+					font-weight: normal
+					font-size: 20px
+					text-align: center
+					margin-bottom: 50px
+					@media screen and (max-width: 1920px)
+					  font-size: 16px
+				.price
+					text-align: center
+					color: $main-color
+					font-size: 42px
+					span
+					  font-size: 22px
+					  display: block
 
+		.block-social
+			border-top: 1px solid #e8e8e8
+			padding-top: 10px
+			margin-top: 10px
+			.list-social
+				li
+					margin-right: 2px
+					@media screen and (max-width: 1920px)
+						width: 30px
+						height: 30px
+					a
+						color: #fff
+						@media screen and (max-width: 1920px)
+							line-height: 30px
+							font-size: 18px
+			.list_icon
+				padding-left: 30px
+				width: calc(100% - 280px)
+				text-align: right
+				@media screen and (max-width: 1920px)
+					width: calc(100% - 192px)
+					padding-left: 0
+				a
+					height: 44px
+					width: 46px
+					@media screen and (max-width: 1920px)
+						width: 33px
+						height: 30px
+					&.icon-chat
+						background: url("../img/icons/icon-chat.png") no-repeat center
+						background-size: 100%
+						margin-right: 10px
+						@media screen and (max-width: 1920px)
+							margin-right: 5px
+
+
+					&.icon-like
+						background: url("../img/icons/icon-like.png") no-repeat center
+						background-size: 100%
+
+			.link_form
+			  width: 100%
+			  margin-top: 5px
 
