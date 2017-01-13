@@ -1,8 +1,8 @@
 @import _mixins
 
 .block_list_feedback
-  padding: 60px 0 20px
-  h3
+	padding: 60px 0 20px
+	h3
 	  font-family: Rubik, sans-serif
 	  color:  #156cb0
 	  font-size: 48px
@@ -13,7 +13,7 @@
 		  font-size: 36px
 
 
-  .item
+	.item
 	  margin: auto
 	  margin-bottom: 20px
 	  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2)
@@ -23,9 +23,122 @@
 	  @media screen and (max-width: 1920px)
 		  width: 100%
 
-	  .info_feedback
-		  border-right: 1px solid #e8e8e8
-		  width: 84%
-	  .rating_info
-			width: 16%
+	.info_feedback
+		border-right: 1px solid #e8e8e8
+		width: 84%
+		vertical-align: middle
+		padding-right: 10px
+		.info_name
+			text-align: center
+			vertical-align: middle
+			width: 30%
+			.name
+				font-family: Rubik, sans-serif
+				color:  #156cb0
+				font-size: 24px
+				font-weight: 400
+				margin-bottom: 20px
+				@media screen and (max-width: 1920px)
+				  	font-size: 20px
+			.date
+				font-family: Rubik, sans-serif
+				color:  #676767
+				font-size: 20px
+				font-weight: 400
+				@media screen and (max-width: 1920px)
+					font-size: 18px
+
+		.text_feedback
+			vertical-align: middle
+			width: 69%
+			border-left: 1px solid #e8e8e8
+			padding-left: 10px
+			box-sizing: border-box
+
+			.text_plus, .text_minus
+				font-family: Rubik, sans-serif
+				color:  #676767
+				font-size: 20px
+				font-weight: 400
+				padding-left: 70px
+				position: relative
+				@media screen and (max-width: 1920px)
+					font-size: 16px
+			.text_minus
+				&:before
+					content: "-"
+					position: absolute
+					top: 50%
+					left: 0
+					border-radius: 24px
+					background:  #f4466f
+					width: 24px
+					height: 24px
+					text-align: center
+					line-height: 24px
+					color: #fff
+					font-family: Rubik, sans-serif
+					margin-top: -12px
+					font-size: 20px
+					font-weight: 400
+			.text_plus
+				margin-bottom: 40px
+				@media screen and (max-width: 1920px)
+					margin-bottom: 20px
+				&:before
+					content: "+"
+					position: absolute
+					top: 50%
+					left: 0
+					border-radius: 24px
+					background:  #57ffa2
+					width: 24px
+					height: 24px
+					text-align: center
+					line-height: 24px
+					color: #fff
+					font-family: Rubik, sans-serif
+					margin-top: -12px
+					font-size: 20px
+					font-weight: 400
+
+		.info_date
+			border-top: 1px solid #e8e8e8
+			margin-top: 10px
+			padding-top: 20px
+			display: block
+			.date_call
+				span
+					font-family: Rubik, sans-serif
+					color:  #bebebe
+					font-size: 20px
+					font-weight: 400
+					width: 40%
+					@media screen and (max-width: 1920px)
+					  font-size: 16px
+
+
+
+
+	.rating_info
+		width: 16%
+		text-align: center
+		vertical-align: middle
+		.rating_label
+		  font-family: Rubik, sans-serif
+		  color:  #156cb0
+		  font-size: 24px
+		  font-weight: 400
+		  margin-bottom: 15px
+		  line-height: 1em
+		  @media screen and (max-width: 1920px)
+			  font-size: 20px
+		.rating_number
+		  font-family: Rubik, sans-serif
+		  color:  $main-color
+		  font-size: 42px
+		  font-weight: 400
+		  line-height: 1em
+		  @media screen and (max-width: 1920px)
+			  font-size: 36px
 
