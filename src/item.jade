@@ -12,9 +12,12 @@ html(lang='ru')
 		main
 
 			include ./partials/block_breadcrumbs.jade
+			include ./partials/block_info_service.jade
 
 
 		include ./partials/footer.jade
 		include ./partials/modals.jade
 
 	include ./partials/scripts.jade
+	script(type='text/javascript', src='//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyD09gZY2fkBhBp213AAKuNXU7rOHnV1uz4')
+	script(src='js/map.js')
