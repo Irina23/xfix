@@ -5,7 +5,7 @@ if ($.browser.iphone || $.browser.ipad || $.browser.ipod ) $('body').addClass('i
 
 $(document).ready( function () {
 	$("form").validate();
-	$('select:not(.rating_show)').selectbox();
+	$('select:not(.rating_show, .rating)').selectbox();
 
 	$(".show_buttom").on('click', function(){
 		var $this = $(this).closest(".list_category");

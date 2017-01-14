@@ -174,3 +174,53 @@
                         a(href="#" ) Забыт пароль
                         a(href="#" ) Зависает (обновить ПО)
                         a(href="#" ) Просит Itunes
+
+
+
+#add_feedback.modal_div
+    .modal_close
+    .modal_content
+        form
+            h3 Оставить отзыв
+            .row.inline-layout
+                .form-holder
+                    label Ваше имя
+                    input(type="text"  name="name" data-validate="name")
+                .form-holder
+                    label Ваш телефон
+                    input(type="text"  name="phone" data-validate="phone")
+            .row.inline-layout
+                .form-holder
+                    label.plus Достоинства
+                    textarea( name="message_plus" data-validate="default")
+                .form-holder
+                    label.minus Недостатки
+                    textarea( name="message_minus" data-validate="default")
+            .form-holder.rating_info.inline-layout.col-2
+                label Оцените качество ремонта:
+                select.rating
+                    option(value="1") 1
+                    option(value="2") 2
+                    option(value="3") 3
+                    option(value="4") 4
+                    option(value="5") 5
+
+            .form-holder.rating_info.inline-layout.col-2
+                label Оцените отношение к клиенту:
+                select.rating
+                    option(value="1") 1
+                    option(value="2") 2
+                    option(value="3") 3
+                    option(value="4") 4
+                    option(value="5") 5
+
+            .form-holder.rating_info.inline-layout.col-2
+                label Оцените скорость ремонта:
+                select.rating
+                    option(value="1") 1
+                    option(value="2") 2
+                    option(value="3") 3
+                    option(value="4") 4
+                    option(value="5") 5
+
+            input.link_form(type="submit" value="Далее")
