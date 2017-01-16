@@ -4,6 +4,8 @@
 	width: calc(100% - 430px)
 	@media screen and (max-width: 1920px)
 		width: calc(100% - 270px)
+	@media screen and (max-width: 850px)
+		width: 100%
 	.item
 		background-color:  #ffffff
 		box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2)
@@ -14,6 +16,9 @@
 		overflow: hidden
 		@media screen and (max-width: 1920px)
 			height: 330px
+		@media screen and (max-width: 1250px)
+			height: auto
+			overflow: visible
 		.block_info_name_feedback
 			border-bottom: 1px solid #e8e8e8
 			padding-bottom: 20px
@@ -31,6 +36,14 @@
 				  font-size: 20px
 				  width: calc(100% - 215px)
 				  max-height: 56px
+				@media screen and (max-width: 600px)
+				  font-size: 18px
+				  max-height: inherit
+				@media screen and (max-width: 500px)
+				  font-size: 16px
+				  display: block
+				  width: 100%
+				  margin-bottom: 15px
 			.label_sale
 				width: 49px
 				height: 68px 
@@ -50,6 +63,8 @@
 
 					@media screen and (max-width: 1920px)
 					  font-size: 18px
+					@media screen and (max-width: 500px)
+					  font-size: 14px
 				.br-widget
 					.br-current-rating
 						display: none
@@ -79,10 +94,15 @@
 			@media screen and (max-width: 1920px)
 				width: 160px
 				height: 160px
+			@media screen and (max-width: 500px)
+				width: 100px
+				height: 100px
 		.block_contact
 			width: calc(100% - 210px)
 			@media screen and (max-width: 1920px)
 			  width: calc(100% - 180px)
+			@media screen and (max-width: 500px)
+				width: calc(100% - 120px)
 			address, .time_work, .phone a
 				font-style: normal
 				font-family: Rubik, sans-serif
@@ -100,6 +120,8 @@
 				  padding-left: 40px
 				  margin-bottom: 15px
 				  font-size: 16px
+				@media screen and (max-width: 600px)
+					font-size: 14px
 			address
 				background: url("../img/icons/icon-point.png") no-repeat left center
 				background-size: 40px auto
@@ -145,6 +167,10 @@
 						line-height: 1.2em
 						@media screen and (max-width: 1920px)
 						  font-size: 14px
+						@media screen and (max-width: 1250px)
+							left: inherit
+							right: 0
+							margin-left: 0
 						&.open
 							display: block
 
@@ -160,18 +186,30 @@
 					@media screen and (max-width: 1920px)
 					  background-size: 30px auto
 					  font-size: 24px
+					@media screen and (max-width: 600px)
+		  				font-size: 16px
 				
 	.block_info_model
 		width: 65%
 		border-right: 1px solid #e8e8e8
 		padding-right: 20px
 		height: 100%
+		@media screen and (max-width: 1250px)
+		  width: 100%
+		  border-right: 0
+		  padding-right: 0
+		  margin-bottom: 10px
+		  padding-bottom: 10px
+		  border-bottom: 1px solid #e8e8e8
 
 
 	.block_link_model
 		width: 35%
 		padding-left: 5px
 		height: 100%
+		@media screen and (max-width: 1250px)
+		  width: 100%
+		  padding-left: 0
 
 		.list_problem_price
 			height: 100%
@@ -208,6 +246,8 @@
 					margin-bottom: 50px
 					@media screen and (max-width: 1920px)
 					  font-size: 16px
+					@media screen and (max-width: 600px)
+					  margin-bottom: 20px
 				.price
 					text-align: center
 					color: $main-color
@@ -215,6 +255,10 @@
 					span
 					  font-size: 22px
 					  display: block
+					@media screen and (max-width: 1250px)
+			  			font-size: 32px
+			  			span
+			  				font-size: 16px
 
 		.block-social
 			border-top: 1px solid #e8e8e8

@@ -34,6 +34,8 @@
 			background-size: 100% auto
 			height: 100%
 			width: 32%
+			@media screen and (max-width: 1250px)
+			  left: 0
 			//@media screen and (max-width: 1920px)
 				width: 30%
 			@media screen and (max-width: 959px)
@@ -49,9 +51,13 @@
 			width: 30%
 			margin-right: 80px
 			margin-left: 40px
+		@media screen and (max-width: 1250px)
+			width: 25%
+			margin-right: 40px
 		@media screen and (max-width: 959px)
 			width: 100%
 			margin: 0 auto 40px
+
 
 	.block-text
 		text-align: center
@@ -62,6 +68,8 @@
 		width: 1000px
 		@media screen and (max-width: 1920px)
 			width: calc(70% - 120px)
+		@media screen and (max-width: 1250px)
+			width: calc(75% - 80px)
 		@media screen and (max-width: 959px)
 			width: 100%
 

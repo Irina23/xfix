@@ -7,6 +7,14 @@
     //width: calc((100% - 60px)/4)
     padding-right: 20px
     padding-bottom: 50px
+    @media screen and (max-width: 959px)
+      width: 50% !important
+      padding-bottom: 30px
+      &:nth-child(2n)
+        margin-right: 0
+    @media screen and (max-width: 600px)
+      width: 100% !important
+      padding-right: 0!important
     &:nth-child(4n)
       margin-right: 0
     &.list_button
@@ -28,6 +36,8 @@
       margin-bottom: 20px
       @media screen and (max-width: 1920px)
         font-size: 18px
+      @media screen and (max-width: 959px)
+        font-size: 16px
     .list_problem
       a
         //display: block
@@ -41,6 +51,7 @@
         justify-content: space-between
         @media screen and (max-width: 1920px)
           font-size: 16px
-
+        @media screen and (max-width: 959px)
+          font-size: 14px
         .price
           color: $main-color

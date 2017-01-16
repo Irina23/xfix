@@ -16,21 +16,43 @@
     background: linear-gradient(90deg, #e01664 0%, #6a2d8f 100%)
     box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.2)
     z-index: 1
-
+    @media screen and (max-width: 500px)
+      display: none
   .container
     position: relative
     z-index: 12
+    @media screen and (max-width: 500px)
+      padding: 0
 
 
   .block_table
     display: flex
     //align-items: center
+    @media screen and (max-width: 850px)
+      display: block
     .column
       width: 25%
       border-right:  2px solid #ffffff
       padding: 0 20px
+      @media screen and (max-width: 850px)
+        width: 50% !important
+        border-right: 0
+        border-bottom:  1px solid #ffffff
+        &:nth-child(2n+1)
+          border-right: 1px solid #fff
+        &:nth-child(n+3)
+          border-bottom: 0
+        //display: block
+      @media screen and (max-width: 500px)
+        width: 100% !important
+        border-bottom: 0
+        border-right: 0!important
+        padding: 0
+
       &:nth-child(1)
         border-left:  2px solid #ffffff
+        @media screen and (max-width: 850px)
+          border-left: 0
       &:nth-child(2)
         width: 38%
       &:nth-child(3)
@@ -44,13 +66,23 @@
         font-size: 24px
         @media screen and (max-width: 1920px)
           font-size: 18px
+        @media screen and (max-width: 1250px)
+          font-size: 16px
+        @media screen and (max-width: 500px)
+          background: linear-gradient(90deg, #e01664 0%, #6a2d8f 100%)
+          box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.2)
+          width: 100%
+          padding: 0 20px
       .td-tablet
         padding: 15px 0
         line-height: 1em
         font-size: 24px
         @media screen and (max-width: 1920px)
           font-size: 18px
-
+        @media screen and (max-width: 1250px)
+          font-size: 16px
+        @media screen and (max-width: 500px)
+          padding: 15px 20px
       .device_like
         text-align: center
       a
@@ -60,6 +92,8 @@
         font-size: 24px
         @media screen and (max-width: 1920px)
           font-size: 18px
+        @media screen and (max-width: 1250px)
+          font-size: 16px
 
       .device_price
         display: flex
@@ -73,7 +107,8 @@
         a
           width: 50%
           padding: 15px 20px
-
+          @media screen and (max-width: 1250px)
+            padding: 15px 10px
           &:after
             content: ""
             position: absolute
@@ -83,6 +118,9 @@
             width: 2px
             background: #fff
             height: 100%
+            @media screen and (max-width: 850px)
+              width: 1px
+              margin-left: 0
 
       .device_problem
         a
@@ -93,7 +131,8 @@
 
       .device_name
         //position: relative
-
+        @media screen and (max-width: 500px)
+          position: relative
         span
           cursor: pointer
           display: block
@@ -113,6 +152,10 @@
             border: 2px solid #fff
             margin-left: -2px
             //border-left: 0
+            @media screen and (max-width: 850px)
+              width: 33%!important
+            @media screen and (max-width: 450px)
+              width: 50%!important
             &:first-child
               margin-left: 0
           h4
@@ -124,6 +167,7 @@
             border-bottom: 2px solid #fff
             @media screen and (max-width: 1920px)
               font-size: 16px
+
           .list_model
             a
               display: block

@@ -9,6 +9,9 @@
   overflow: hidden
   @media screen and (max-width: 1920px)
     width: 250px
+  @media screen and (max-width: 850px)
+    display: block!important
+    margin: 0 auto 30px
 
   .item
     margin-bottom: 20px
@@ -20,6 +23,8 @@
       margin-bottom: 20px
       @media screen and (max-width: 1920px)
         font-size: 18px
+      @media screen and (max-width: 959px)
+        font-size: 16px
 
     .checkbox
       margin-bottom: 20px
@@ -30,7 +35,10 @@
         font-size: 24px
         @media screen and (max-width: 1920px)
           font-size: 18px
-
+        @media screen and (max-width: 1250px)
+          font-size: 16px
+        @media screen and (max-width: 959px)
+          font-size: 14px
 
 
   .selectbox
@@ -56,6 +64,8 @@
         font-size: 18px
       @media screen and (max-width: 1250px)
         font-size: 16px
+      @media screen and (max-width: 959px)
+        font-size: 14px
       .trigger
         position: absolute
         width: 25px
@@ -93,7 +103,7 @@
       border-left: 4px solid $main-color-hover
       @media screen and (max-width: 1920px)
         width: 247px
-      @media screen and (max-width: 1250px)
+      //@media screen and (max-width: 1250px)
         width: 210px
       ul
         li
@@ -104,5 +114,7 @@
             font-size: 18px
           @media screen and (max-width: 1250px)
             font-size: 16px
+          @media screen and (max-width: 959px)
+            font-size: 14px
           &.disabled, &.sel, &:first-child
             display: none
