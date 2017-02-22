@@ -14,6 +14,11 @@
 		vertical-align: top
 		@media screen and (max-width: 1920px)
 		  width: calc((1080px/2) + (100% - 1080px)/2)
+		@media screen and (max-width: 1250px)
+			width: calc((900px/2) + (100% - 900px)/2)
+		@media screen and (max-width: 959px)
+			min-height: 250px
+			width: 100%
 	.info_service
 		width: calc(1700px/2)
 		display: inline-block
@@ -23,9 +28,16 @@
 		box-sizing: border-box
 		@media screen and (max-width: 1920px)
 		  width: calc(1080px/2)
+		@media screen and (max-width: 1250px)
+			width: calc(900px/2)
+		@media screen and (max-width: 959px)
+			width: 100%
+
 
 	.block_rating
 		margin-bottom: 30px
+		@media screen and (max-width: 1250px)
+			margin-bottom: 7px
 
 		.rating_show
 		  display: none
@@ -58,7 +70,16 @@
 			  	font-size: 18px
 			  	margin-top: 10px
 
+		.info-rating
+			@media screen and (max-width: 1250px)
+				display: block
+				width: 100%
 		.list_rating_feedback
+			@media screen and (max-width: 1250px)
+				display: block
+				width: 100%
+				margin-top: 10px
+
 			li
 				div
 					width: 240px
@@ -83,6 +104,8 @@
 			margin-bottom: 25px
 			@media screen and (max-width: 1920px)
 			  	margin-bottom: 20px
+			@media screen and (max-width: 1250px)
+				margin-bottom: 7px
 			h4
 				margin-bottom: 15px
 				font-family: Rubik, sans-serif
@@ -91,6 +114,9 @@
 				font-size: 30px
 				@media screen and (max-width: 1920px)
 				  	font-size: 20px
+				@media screen and (max-width: 1250px)
+					font-size: 16px
+					margin-bottom: 0
 			address,p
 				font-family: Rubik, sans-serif
 				font-weight: normal
@@ -100,21 +126,26 @@
 				margin-bottom: 15px
 				@media screen and (max-width: 1920px)
 				  	font-size: 16px
+				@media screen and (max-width: 1250px)
+					font-size: 14px
+
 				&:last-child
 					margin-bottom: 0
 				span
 					color: $main-color
 			.list_metro
 				>div
-				  padding-left: 60px
-				  font-family: Rubik, sans-serif
-				  font-weight: normal
-				  color:  #676767
-				  font-size: 20px
-				  line-height: 26px
-				  margin-bottom: 15px
-				  @media screen and (max-width: 1920px)
-					  font-size: 16px
+					padding-left: 60px
+					font-family: Rubik, sans-serif
+					font-weight: normal
+					color:  #676767
+					font-size: 20px
+					line-height: 26px
+					margin-bottom: 15px
+					@media screen and (max-width: 1920px)
+				  		font-size: 16px
+					@media screen and (max-width: 1250px)
+						font-size: 14px
 				  &:last-child
 					  margin-bottom: 0
 				.red
@@ -172,7 +203,8 @@
 					@media screen and (max-width: 1920px)
 					  background-size: 30px auto
 					  font-size: 24px
-
+					@media screen and (max-width: 1250px)
+						font-size: 20px
 
 	.block_button_service
 		.link_form
@@ -185,12 +217,19 @@
 			  	line-height: 35px
 			  	height: 40px
 			  	margin-right: 30px
-
+			@media screen and (max-width: 1250px)
+				display: block
+				margin-left: 0
+				margin-bottom: 10px
 		.link_sms
 			width: 100px
 			margin-right: 1px
 			@media screen and (max-width: 1920px)
 				width: 80px
+			@media screen and (max-width: 1250px)
+				display: inline-block
+
+
 		.link_phone
 			width: 100px
 			margin-right: 1px
@@ -199,3 +238,5 @@
 			@media screen and (max-width: 1920px)
 			  	background-size: 25px
 			  	width: 80px
+			@media screen and (max-width: 1250px)
+				display: inline-block

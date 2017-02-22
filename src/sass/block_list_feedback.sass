@@ -3,16 +3,16 @@
 .block_list_feedback
 	padding: 60px 0 20px
 	h3
-	  font-family: Rubik, sans-serif
-	  color:  #156cb0
-	  font-size: 48px
-	  font-weight: 300
-	  margin-bottom: 40px
-	  text-align: center
-	  @media screen and (max-width: 1920px)
+		font-family: Rubik, sans-serif
+		color:  #156cb0
+		font-size: 48px
+		font-weight: 300
+		margin-bottom: 40px
+		text-align: center
+		@media screen and (max-width: 1920px)
 		  font-size: 36px
-
-
+		@media screen and (max-width: 959px)
+			font-size: 24px
 	.item
 	  margin: auto
 	  margin-bottom: 20px
@@ -28,10 +28,20 @@
 		width: 84%
 		vertical-align: middle
 		padding-right: 10px
+		@media screen and (max-width: 600px)
+			width: 100%
+			padding-right: 0
+			border-right: 0
 		.info_name
 			text-align: center
 			vertical-align: middle
 			width: 30%
+			@media screen and (max-width: 500px)
+				width: 100%
+				padding-bottom: 10px
+				border-bottom: 1px solid #e8e8e8
+				margin-bottom: 10px
+
 			.name
 				font-family: Rubik, sans-serif
 				color:  #156cb0
@@ -40,6 +50,8 @@
 				margin-bottom: 20px
 				@media screen and (max-width: 1920px)
 				  	font-size: 20px
+				@media screen and (max-width: 959px)
+					font-size: 16px
 			.date
 				font-family: Rubik, sans-serif
 				color:  #676767
@@ -47,6 +59,8 @@
 				font-weight: 400
 				@media screen and (max-width: 1920px)
 					font-size: 18px
+				@media screen and (max-width: 959px)
+					font-size: 14px
 
 		.text_feedback
 			vertical-align: middle
@@ -54,6 +68,10 @@
 			border-left: 1px solid #e8e8e8
 			padding-left: 10px
 			box-sizing: border-box
+			@media screen and (max-width: 500px)
+				width: 100%
+				border: 0
+				padding-left: 0
 
 			.text_plus, .text_minus
 				font-family: Rubik, sans-serif
@@ -64,6 +82,9 @@
 				position: relative
 				@media screen and (max-width: 1920px)
 					font-size: 16px
+				@media screen and (max-width: 959px)
+					font-size: 14px
+					padding-left: 40px
 			.text_minus
 				&:before
 					content: "-"
@@ -107,7 +128,10 @@
 			margin-top: 10px
 			padding-top: 20px
 			display: block
+
 			.date_call
+				@media screen and (max-width: 500px)
+					margin-bottom: 10px
 				span
 					font-family: Rubik, sans-serif
 					color:  #bebebe
@@ -116,7 +140,13 @@
 					width: 40%
 					@media screen and (max-width: 1920px)
 					  font-size: 16px
-
+					@media screen and (max-width: 959px)
+						font-size: 14px
+					@media screen and (max-width: 600px)
+						width: 50%
+					@media screen and (max-width: 500px)
+						display: block
+						width: 100%
 
 
 
@@ -124,15 +154,21 @@
 		width: 16%
 		text-align: center
 		vertical-align: middle
+		@media screen and (max-width: 600px)
+			width: 100%
+			padding-top: 10px
+			border-top: 1px solid #e8e8e8
 		.rating_label
-		  font-family: Rubik, sans-serif
-		  color:  #156cb0
-		  font-size: 24px
-		  font-weight: 400
-		  margin-bottom: 15px
-		  line-height: 1em
-		  @media screen and (max-width: 1920px)
+			font-family: Rubik, sans-serif
+			color:  #156cb0
+			font-size: 24px
+			font-weight: 400
+			margin-bottom: 15px
+			line-height: 1em
+			@media screen and (max-width: 1920px)
 			  font-size: 20px
+			@media screen and (max-width: 959px)
+				font-size: 16px
 		.rating_number
 		  font-family: Rubik, sans-serif
 		  color:  $main-color

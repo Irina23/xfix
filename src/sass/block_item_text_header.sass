@@ -4,6 +4,8 @@
 	//padding-top: 40px
 	position: relative
 	margin-top: -60px
+	@media screen and (max-width: 959px)
+		margin-top: 0
 
 	.block_video
 		width: calc(50% - 25px)
@@ -14,9 +16,11 @@
 			float: none
 			width: 100%
 			margin-bottom: 40px
-			margin-right: auto
+			margin-left: auto
+
 		@media screen and (max-width: 600px)
 			height: 250px
+
 			iframe
 				height: 100%
 		iframe
@@ -40,6 +44,7 @@
 			width: 100%
 			margin-left: auto
 
+
 		h3
 			position: relative
 			color: $main-color-hover
@@ -54,7 +59,7 @@
 		  		font-size: 36px
 			@media screen and (max-width: 1250px)
 				font-size: 28px
-			@media screen and (max-width: 400px)
+			@media screen and (max-width: 959px)
 				font-size: 24px
 
 				
@@ -86,6 +91,12 @@
 			height: 280px
 			overflow: hidden
 			margin-bottom: 30px
-
+			@media screen and (max-width: 800px)
+				height: auto
+				p
+					&:nth-child(n+3)
+						display: none
 			&.open
 				height: auto
+				p
+					display: block

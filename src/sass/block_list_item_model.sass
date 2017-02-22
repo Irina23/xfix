@@ -95,14 +95,14 @@
 				width: 160px
 				height: 160px
 			@media screen and (max-width: 500px)
-				width: 100px
-				height: 100px
+				width: 60px
+				height: 60px
 		.block_contact
 			width: calc(100% - 210px)
 			@media screen and (max-width: 1920px)
 			  width: calc(100% - 180px)
 			@media screen and (max-width: 500px)
-				width: calc(100% - 120px)
+				width: calc(100% - 80px)
 			address, .time_work, .phone a
 				font-style: normal
 				font-family: Rubik, sans-serif
@@ -122,6 +122,12 @@
 				  font-size: 16px
 				@media screen and (max-width: 600px)
 					font-size: 14px
+
+				@media screen and (max-width: 500px)
+					padding-left: 0
+					background: none!important
+					max-height: inherit!important
+
 			address
 				background: url("../img/icons/icon-point.png") no-repeat left center
 				background-size: 40px auto
@@ -187,7 +193,7 @@
 					  background-size: 30px auto
 					  font-size: 24px
 					@media screen and (max-width: 600px)
-		  				font-size: 16px
+		  				font-size: 14px
 				
 	.block_info_model
 		width: 65%
@@ -247,7 +253,11 @@
 					@media screen and (max-width: 1920px)
 					  font-size: 16px
 					@media screen and (max-width: 600px)
-					  margin-bottom: 20px
+					  margin-bottom: 20px!important
+					@media screen and (max-width: 500px)
+						font-size: 14px
+
+
 				.price
 					text-align: center
 					color: $main-color
@@ -282,6 +292,11 @@
 				@media screen and (max-width: 1920px)
 					width: calc(100% - 192px)
 					padding-left: 0
+				@media screen and (max-width: 600px)
+					width: 100%
+					display: block
+					text-align: left
+					padding: 10px 0
 				a
 					height: 44px
 					width: 46px

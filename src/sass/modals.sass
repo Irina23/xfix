@@ -37,7 +37,7 @@
     .modal_content
       overflow-y: scroll
       padding: 40px 20px
-
+      height: 100%
       .row
         .form-holder
           display: block
@@ -142,7 +142,7 @@
       line-height: 1em
       display: block
       @media screen and (max-width: 750px)
-        font-size: 12px
+        font-size: 14px
 
     textarea
       width: 100%
@@ -326,8 +326,13 @@
   margin-left: -350px
   background: url("../img/bg/bg_popup2.png") no-repeat
   @media screen and (max-width: 750px)
-    margin-top: -240px
-    height: 480px
+    margin-top: 0
+    height: calc(100vh - 40px)
+    top: 20px!important
+    width: calc(100% - 40px)
+    margin-left: 0
+    left: 20px
+    background: linear-gradient(90deg, #6a2d8f 0%, #f25c29 100%)
 
 
   h3
@@ -339,13 +344,21 @@
     margin-bottom: 40px
     @media screen and (max-width: 1920px)
       font-size: 36px
-
+    @media screen and (max-width: 750px)
+      font-size: 24px
+      margin-bottom: 20px
 
 
   .rating
     display: none
+  .br-wrapper
+    @media screen and (max-width: 600px)
+
+      display: block
+      width: 100%
   .br-widget
     padding-left: 10px
+
     .br-current-rating
       display: none
     a
@@ -369,6 +382,10 @@
       display: inline-block
       line-height: 30px
       margin-bottom: 0
+      @media screen and (max-width: 600px)
+        //padding-left: 0
+        display: block
+        width: 100%
 
 
   .link_form

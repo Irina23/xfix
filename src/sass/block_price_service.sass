@@ -11,12 +11,17 @@
     text-align: center
     @media screen and (max-width: 1920px)
       font-size: 36px
+    @media screen and (max-width: 959px)
+      font-size: 24px
+      margin-bottom: 20px
 
 
   .block_price_tab
     .tab-menu-main
       text-align: center
       margin-bottom: 50px
+      @media screen and (max-width: 959px)
+        margin-bottom: 20px
       li
         line-height: 50px
         font-size: 36px
@@ -30,6 +35,9 @@
           text-decoration: underline
         @media screen and (max-width: 1920px)
           font-size: 24px
+        @media screen and (max-width: 959px)
+          font-size: 16px
+          padding: 0 10px
 
     .list_model_link
       margin-bottom: 50px
@@ -84,9 +92,9 @@
             max-width: inherit
             display: inline-block
             vertical-align: middle
-            width: 25%
-
-
+            width: 25% !important
+          @media screen and (max-width: 600px)
+            width: 33% !important
   .block_table
     .row
       padding: 0 15px
@@ -96,13 +104,17 @@
       .th-tablet
         display: inline-block
         vertical-align: middle
-        width: 75%
+        width: 74%
         font-family: Rubik, sans-serif
         color:  #156cb0
         font-size: 24px
         font-weight: normal
         @media screen and (max-width: 1920px)
           font-size: 18px
+        @media screen and (max-width: 959px)
+          font-size: 14px
+        @media screen and (max-width: 400px)
+          font-size: 12px
         &.other-price
           padding: 20px 40px
           font-family: Rubik, sans-serif
@@ -116,10 +128,16 @@
           @media screen and (max-width: 1920px)
             font-size: 16px
             padding: 10px 20px
-
+          @media screen and (max-width: 959px)
+            font-size: 14px
+          @media screen and (max-width: 600px)
+            padding: 10px
+          @media screen and (max-width: 400px)
+            font-size: 12px
+            padding: 5px
       .td-tablet
         display: inline-block
-        width: 75%
+        width: 74%
 
         a
           text-decoration: none
@@ -129,14 +147,21 @@
           font-weight: normal
           @media screen and (max-width: 1920px)
             font-size: 16px
+          @media screen and (max-width: 959px)
+            font-size: 14px
+          @media screen and (max-width: 400px)
+            font-size: 12px
           span
             width: 70%
             display: inline-block
-
+            @media screen and (max-width: 400px)
+              width: 65%
             &.price
               width: 29%
               color: $main-color
               display: inline-block
+              @media screen and (max-width: 400px)
+                width: 35%
 
 
         &.other-price
@@ -148,3 +173,16 @@
           text-align: center
           @media screen and (max-width: 1920px)
             padding: 10px 20px
+          @media screen and (max-width: 959px)
+            font-size: 14px
+          @media screen and (max-width: 600px)
+            padding: 10px
+          @media screen and (max-width: 400px)
+            padding: 5px
+            font-size: 12px
+
+  .block_table
+    @media screen and (max-width: 959px)
+      display: block
+      width: 100%
+      margin-bottom: 30px
