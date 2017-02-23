@@ -11,7 +11,10 @@
 	  font-family: Rubik, sans-serif
 	  margin-bottom: 40px
 
+
 	.list_category
+
+
 		.show_buttom,.hide_buttom
 		  margin-top: 30px
 		  cursor: pointer
@@ -24,6 +27,7 @@
 			height: 200px
 			overflow: hidden
 			position: relative
+			text-align: center
 			@media screen and (max-width: 1920px)
 				height: 160px
 			&.open
@@ -54,6 +58,7 @@
 				//@media screen and (max-width: 1250px)
 					height: 40px
 		li.parent
+			text-align: left
 			ul
 				padding-right: 10px
 			a
@@ -71,6 +76,23 @@
 			> a
 				font-weight: 400
 				margin-bottom: 20px
+	.link_all
+		color: $main-color-hover
+		padding-bottom: 4px
+		position: relative
+		width: auto
+		display: inline-block
+		text-decoration: none
+		&:after
+			content: ""
+			position: absolute
+			width: 100%
+			height: 3px
+			background: url('../img/icons/icon-drop.png') repeat-x
+			left: 0
+			bottom: 0
+
+
 
 
 .block_devices
