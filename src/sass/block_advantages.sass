@@ -3,6 +3,8 @@
 .block_advantages
 	padding-top: 60px
 	background: url("../img/bg/shadow2.png") no-repeat bottom center
+	@media screen and (max-width: 1920px)
+		padding-top: 30px
 	@media screen and (max-width: 650px)
 		background: none
 	.container
@@ -17,8 +19,10 @@
 		margin-bottom: 40px
 		@media screen and (max-width: 1920px)
 			font-size: 36px
+			margin-bottom: 20px
 		@media screen and (max-width: 1250px)
 			font-size: 24px
+			margin-bottom: 20px
 	.block_text
 		text-align: center
 		width: 900px
@@ -26,7 +30,7 @@
 		//background: url("../img/bg/bg-advantages.png") no-repeat center bottom
 		padding-bottom: 88px
 		position: relative
-		@media screen and (max-width: 1250px)
+		@media screen and (max-width: 1920px)
 			width: 600px
 			padding-bottom: 58px
 		@media screen and (max-width: 650px)
@@ -54,7 +58,7 @@
 			position: relative
 			z-index: 3
 
-			@media screen and (max-width: 1250px)
+			@media screen and (max-width: 1920px)
 				width: 410px
 				box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2)
 				padding-top: 30px
@@ -76,7 +80,7 @@
 				top: 0
 				left: -25px
 				z-index: 2
-				@media screen and (max-width: 1250px)
+				@media screen and (max-width: 1920px)
 					display: none
 	.logo
 		width: 227px
@@ -86,18 +90,18 @@
 			img
 			  	width: 100%
 		@media screen and (max-width: 1920px)
-			width: 200px
-			//margin-bottom: 30px
-		@media screen and (max-width: 1250px)
 			width: 160px
 			margin-bottom: 30px
+		//@media screen and (max-width: 1250px)
+			width: 160px
+			//margin-bottom: 30px
 
 
 	.advantages_text
 		position: relative
 		li
 			margin-bottom: 30px
-			@media screen and (max-width: 1250px)
+			@media screen and (max-width: 1920px)
 				margin-bottom: 20px
 			span
 				font-family: Rubik, sans-serif
@@ -105,9 +109,9 @@
 				font-size: 30px
 				font-weight: 400
 				line-height: 1em
-				@media screen and (max-width: 1920px)
+				//@media screen and (max-width: 1920px)
 					font-size: 20px
-				@media screen and (max-width: 1250px)
+				@media screen and (max-width: 1920px)
 					font-size: 16px
 				&.number
 					font-family: Rubik, sans-serif
@@ -118,9 +122,9 @@
 					display: block
 					padding-bottom: 17px
 					position: relative
-					@media screen and (max-width: 1920px)
+					//@media screen and (max-width: 1920px)
 						font-size: 30px
-					@media screen and (max-width: 1250px)
+					@media screen and (max-width: 1920px)
 						font-size: 24px
 					&:after
 						content: ""
@@ -146,28 +150,29 @@
 			z-index: 3
 
 			@media screen and (max-width: 1920px)
-				left: 0
+				left: 100px
 				width: 150px
 				height: 150px
 			@media screen and (max-width: 1250px)
-				width: 150px
-				height: 150px
+				left: 0
 			@media screen and (max-width: 959px)
 				left: 20px
 			&:nth-child(2n+1)
 				top: 250px
-				@media screen and (max-width: 1250px)
+				@media screen and (max-width: 1920px)
 					top: 150px
 			&:nth-child(2n)
 				top: 510px
-				@media screen and (max-width: 1920px)
+				//@media screen and (max-width: 1920px)
 					top: 460px
-				@media screen and (max-width: 1250px)
+				@media screen and (max-width: 1920px)
 					top: 340px
 			&:nth-child(2n+3), &:nth-child(2n+4)
 				right: 180px
 				left: inherit
 				@media screen and (max-width: 1920px)
+					right: 100px
+				@media screen and (max-width: 1250px)
 				  right: 0
 				@media screen and (max-width: 959px)
 					right: 20px
