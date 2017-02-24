@@ -6,8 +6,17 @@
 	padding-bottom: 0
 
 	.block-text
-
-		h3
+		font-family: 'Rubik', sans-serif
+		font-weight: 300
+		font-size: 19px
+		color: #fff
+		margin-bottom: 20px
+		line-height: 1.3em
+		@media screen and (max-width: 1920px)
+			font-size: 16px
+		@media screen and (max-width: 1250px)
+			font-size: 14px
+		h1
 			font-size: 48px
 			margin-bottom: 25px
 			text-transform: none
@@ -15,12 +24,81 @@
 			font-weight: 400
 			padding-bottom: 20px
 			border-bottom: 3px solid $main-color-hover
+			color: $main-color-hover
 			@media screen and (max-width: 1920px)
 				font-size: 36px
 			@media screen and (max-width: 1250px)
 				font-size: 28px
 			@media screen and (max-width: 400px)
 				font-size: 24px
+
+		h2
+			font-size: 36px
+			margin-bottom: 20px
+			text-transform: none
+			font-family: 'Rubik', sans-serif
+			font-weight: 400
+
+			@media screen and (max-width: 1920px)
+				font-size: 28px
+			@media screen and (max-width: 1250px)
+				font-size: 24px
+			@media screen and (max-width: 400px)
+				font-size: 20px
+		h3
+			font-size: 28px
+			margin-bottom: 20px
+			text-transform: none
+			font-family: 'Rubik', sans-serif
+			font-weight: 400
+
+			@media screen and (max-width: 1920px)
+				font-size: 24px
+			@media screen and (max-width: 1250px)
+				font-size: 20px
+			@media screen and (max-width: 400px)
+				font-size: 18px
+		h4
+			font-size: 24px
+			margin-bottom: 20px
+			text-transform: none
+			font-family: 'Rubik', sans-serif
+			font-weight: 400
+
+			@media screen and (max-width: 1920px)
+				font-size: 20px
+			@media screen and (max-width: 1250px)
+				font-size: 18px
+			@media screen and (max-width: 400px)
+				text-transform: uppercase
+				font-size: 16px
+
+		h5
+			font-size: 20px
+			margin-bottom: 20px
+			font-family: 'Rubik', sans-serif
+			font-weight: 400
+			text-transform: uppercase
+			@media screen and (max-width: 1920px)
+				font-size: 18px
+			@media screen and (max-width: 1250px)
+				font-size: 16px
+			@media screen and (max-width: 400px)
+				font-size: 14px
+
+		h6
+			font-size: 18px
+			margin-bottom: 20px
+			font-family: 'Rubik', sans-serif
+			font-weight: 400
+			text-transform: uppercase
+			@media screen and (max-width: 1920px)
+				font-size: 16px
+			@media screen and (max-width: 1250px)
+				font-size: 14px
+
+
+
 		p
 			font-family: 'Rubik', sans-serif
 			font-weight: 300
@@ -32,3 +110,13 @@
 				font-size: 16px
 			@media screen and (max-width: 1250px)
 				font-size: 14px
+		ol
+			margin-bottom: 20px
+			li
+				margin-left: 20px
+
+		ul
+			margin-bottom: 20px
+			li
+				list-style: disc
+				margin-left: 20px
