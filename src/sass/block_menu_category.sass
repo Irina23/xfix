@@ -3,9 +3,9 @@
 
 
 .block_menu_category
-	margin-bottom: 90px
+	margin-bottom: 30px
 	position: relative
-	@media screen and (max-width: 959px)
+	//@media screen and (max-width: 959px)
 		margin-bottom: 50px
 	&:after
 		content: ""
@@ -25,11 +25,55 @@
 		background: linear-gradient(90deg, #f25c29 0%, #fed24b 100%)
 
 
-	.list_category
-		text-align: right
+
+	.link_all
+		color: $main-color-hover
+		padding-bottom: 4px
 		position: relative
+		width: auto
+		display: inline-block
+		text-decoration: none
+		cursor: pointer
+		margin-bottom: 20px
+		&:after
+			content: ""
+			position: absolute
+			width: 100%
+			height: 3px
+			background: url('../img/icons/icon-drop.png') repeat-x
+			left: 0
+			bottom: 0
 
 
+	.buttom-holder
+		text-align: center
+		.hide_all
+			display: none
+
+	.list_category
+		text-align: left
+		position: relative
+		&.open
+			.list_url
+				height: auto
+			.buttom-holder
+				.show_all
+					display: none
+				.hide_all
+					display: inline-block
+		.list_url
+			height: 80px
+			overflow: hidden
+
+			> li
+				> a
+					font-size: 18px
+					color: $main-color-hover
+					text-decoration: none
+					font-weight: 300
+					line-height: 40px
+					display: block
+					padding: 0 20px
 
 		li.parent
 

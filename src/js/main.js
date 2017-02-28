@@ -30,6 +30,16 @@ $(document).ready( function () {
 	});
 
 
+	$(".show_all").on('click', function(){
+		var $this = $(this).closest(".list_category, .list_model_link");
+		$this.addClass('open');
+
+	});
+	$(".hide_all").on('click', function(){
+		var $this = $(this).closest(".list_category, .list_model_link");
+		$this.removeClass('open');
+
+	});
 
 
 	$(document).on('scroll', function () {
