@@ -12,10 +12,18 @@
     font-weight: 300
     line-height: 1em
     margin-bottom: 30px
+    img
+      vertical-align: top
+      display: inline-block
+      margin-top: 10px
     @media screen and (max-width: 1920px)
       font-size: 36px
+      img
+        margin-top: 3px
     @media screen and (max-width: 1250px)
       font-size: 28px
+      img
+        margin-top: 0
     @media screen and (max-width: 400px)
       font-size: 24px
 
@@ -45,10 +53,8 @@
         display: none
     &.open
       .row
-        &:nth-child(1n+3)
-          display: flex
-          @media screen and (max-width: 959px)
-            display: block
+        .item
+          display: inline-block
       .buttom-holder
         .show_all
           display: none
@@ -56,45 +62,56 @@
           display: inline-block
     .row
       position: relative
-      display: flex
-      -webkit-box-orient: horizontal
-      -webkit-box-direction: normal
-      flex-direction: row
-      justify-content: space-around
-      flex-grow: 14
-      align-content: center
-      align-self: center
-      margin-bottom: 20px
-      &:nth-child(1n+3)
-        display: none
-      @media screen and (max-width: 959px)
-        display: block
+      text-align: justify
+
+
+      //display: flex
+        -webkit-box-orient: horizontal
+        -webkit-box-direction: normal
+        flex-direction: row
+        justify-content: space-around
+        flex-grow: 14
+        align-content: center
+        align-self: center
+        margin-bottom: 20px
         &:nth-child(1n+3)
           display: none
-      &:last-child
-        margin-bottom: 0
-
-
-      .item
-        text-align: center
-        min-width: 45px
-        max-width: 7%
         @media screen and (max-width: 959px)
-          max-width: inherit
-          display: inline-block
-          vertical-align: middle
-          width: 25%
+          display: block
+          &:nth-child(1n+3)
+            display: none
+        &:last-child
+          margin-bottom: 0
 
-        a
-          color:  #7d7d7d
-          font-size: 24px
-          font-weight: 400
-          text-decoration: none
+
+    .item
+      text-align: left
+      width: calc( 100% / 7)
+      padding: 5px
+      vertical-align: middle
+      &:nth-child(n+15)
+        display: none
+
+      //min-width: 45px
+      //max-width: 7%
+      @media screen and (max-width: 959px)
+        width: 25%
+        &:nth-child(n+6)
+          display: none
+
+      a
+        color:  #7d7d7d
+        font-size: 24px
+        font-weight: 400
+        text-decoration: none
+        transition: all 0.35s
+        display: inline-block
+
+        &:hover
           transition: all 0.35s
-          &:hover
-            transition: all 0.35s
-            color:  #156cb0
-          @media screen and (max-width: 1920px)
-            font-size: 16px
-          @media screen and (max-width: 959px)
-            font-size: 14px
+          color:  #156cb0
+        @media screen and (max-width: 1920px)
+          font-size: 14px
+          //line-height: 1.2em
+        //@media screen and (max-width: 959px)
+          font-size: 14px

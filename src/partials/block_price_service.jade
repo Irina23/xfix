@@ -4,7 +4,9 @@ mixin itemModel (name, url)
 
 .block_price_service
     .container
-        h3 Прайс на услуги сервиса
+        h3
+            img(src="img/content/img_phone.jpg" alt="img_phone")
+            | &nbsp;Прайс на услуги сервиса
 
         .tabs.block_price_tab
             .tabs-menu.tab-menu-main
@@ -24,8 +26,7 @@ mixin itemModel (name, url)
                     .tabs-menu
                         .nav.nav-tabs.list_model_link
                                 ul.row.inline-layout
-                                    li.item
-                                        img(src="img/content/img_tablet.jpg" alt="img_tablet")
+
                                     li.item.active(href="#one1" data-toggle="tab") One mini
 
                                     +itemModel(
@@ -78,9 +79,8 @@ mixin itemModel (name, url)
                                     '#'
                                     )
 
-                                ul.row.inline-layout
-                                    li.item
-                                        img(src="img/content/img_phone.jpg" alt="img_phone")
+
+
                                     +itemModel(
                                     'One mini',
                                     '#'
@@ -136,7 +136,9 @@ mixin itemModel (name, url)
                                     )
 
 
-
+                                .buttom-holder
+                                    .link_all.show_all открыть все
+                                    .link_all.hide_all свернуть
                     .tab-content
                         .tab-pane#one1.active
                             .block-tab-content.inline-layout.col-2
