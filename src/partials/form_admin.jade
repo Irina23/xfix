@@ -1,0 +1,77 @@
+
+form#form-admin
+    .row.inline-layout
+        h2 Название СЦ
+        .form-holder
+            input(type="text" placeholder="email")
+    .row
+        label Фото СЦ
+        .form-holder
+
+            input(type="file" name="")
+        .form-holder
+            input(type="file" name="")
+        .form-holder
+            input(type="file" name="")
+        .form-holder
+            input(type="file" name="")
+    .row
+        #map
+    .row.inline-layout
+        .form-holder
+            select(name="city" data-validate="select")
+                option(value=""   ) Город
+                option(value="2") option 2
+                option(value="3") option 3
+        .form-holder
+            select(name="region" data-validate="select")
+                option(value=""   ) Район
+                option(value="2") option 2
+                option(value="3") option 3
+        .form-holder
+            select(name="metro" data-validate="select")
+                option(value="" ) Метро
+                option(value="2") option 2
+                option(value="3") option 3
+    .row.inline-layout
+        .form-holder
+            input(placeholder="Улица" type="text")
+        .form-holder
+            input(placeholder="Дом" type="text")
+        input(type="submit" value="Найти на карте")
+
+    .row
+        label Дополнительная информация о СЦ
+        textarea
+    .row
+        label Описание СЦ (СЕО текст)
+        textarea
+    .row
+        label Поле
+        input(type="text")
+    .row
+        label Время работы
+        lable Понедельник - пятница
+        .inline-layout
+            label C
+            .form-holder
+                input(type="text")
+            label C
+                .form-holder
+                    input(type="text")
+        lable Субота
+        .inline-layout
+            label C
+            .form-holder
+                input(type="text")
+            label C
+                .form-holder
+                    input(type="text")
+        lable Воскресение
+        .inline-layout
+            label C
+            .form-holder
+                input(type="text")
+            label C
+                .form-holder
+                    input(type="text")

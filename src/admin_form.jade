@@ -1,0 +1,26 @@
+doctype html
+html(lang='ru')
+	head
+		title XFIX
+
+		include ./partials/head.jade
+
+	body
+
+		include ./partials/noscript.jade
+		include ./partials/navigation_admin.jade
+		main
+
+			.container.container-admin.inline-layout
+
+				include ./partials/block_sidebar_admin.jade
+				.form-admin
+					include ./partials/block_breadcrumbs.jade
+					include ./partials/form_admin.jade
+
+		include ./partials/footer.jade
+
+
+	include ./partials/scripts.jade
+	script(type='text/javascript', src='//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyD09gZY2fkBhBp213AAKuNXU7rOHnV1uz4')
+	script(src='js/map.js')

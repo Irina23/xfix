@@ -1,0 +1,38 @@
+header
+
+
+	.header.header_admin.no-scroll
+		.container
+			.block-top.inline-layout
+				.logo
+					a.inline-layout(href="#")
+						.img-holder
+							img(src="img/content/logo-xfix.png" alt="XFIX")
+						span .com.
+							i ua
+				h3.name_company СЕрвисный центр (ID)
+			.block-form.inline-layout
+				.link_header
+					a(href="#") Имя пользователя
+					a(href="#") Выход
+				.form-holder
+					select(name="device" data-validate="select")
+						option(value=""   checked) Выбор СЦ
+						option(value="2") option 2
+						option(value="3") option 3
+				.form-holder-switch.inline-layout
+					.item
+						p Показывать СЦ
+						.onoffswitch
+
+							input(type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch1")
+							label.onoffswitch-label(for="switch1")
+								span.onoffswitch-inner
+								span.onoffswitch-switch
+					.item
+						p Показывать прайс
+						.onoffswitch
+							input(type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch2")
+							label.onoffswitch-label(for="switch2")
+								span.onoffswitch-inner
+								span.onoffswitch-switch
