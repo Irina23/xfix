@@ -2,16 +2,25 @@
 
 
 .container-admin
-  padding: 100px 0
+  padding: 50px 0
+  @media screen and (max-width: 959px)
+    padding: 50px 20px
 .block_sidebar
   width: 250px
-  margin-right: 50px
+  margin-right: 45px
+  @media screen and (max-width: 959px)
+    width: 100%
+    margin-bottom: 30px
+    margin-right: 0
+
   li
     margin-top: -1px
     &:first-child
       margin-top: 0
       a
         border-radius: 10px 10px 0 0
+        @media screen and (max-width: 959px)
+          border-radius: 0
     &.active
       a
         color: #fff
@@ -27,6 +36,8 @@
       text-decoration: none
       border: 1px solid #676767
       transition: all 0.35s
+      @media screen and (max-width: 1250px)
+        font-size: 14px
       &:hover
         transition: all 0.35s
         color: #fff

@@ -131,11 +131,18 @@ $(document).ready( function () {
 	//rating
 	$('.rating').barrating({
 	 	theme: ''
-	 });
-	 $('.rating_show').barrating({
-		 theme: '',
-		 readonly: true
-	 });
+	});
+	$('.rating_show').barrating({
+	 theme: '',
+	 readonly: true
+	});
+
+
+	//jQuery("input[type=file]").after('<span class="filetext"></span>');
+	jQuery('input[type=file]').bind('change', function() {
+		var fl = (this.files[0]);
+		jQuery(this).next().next().text(fl.name);
+	});
 
 });
 

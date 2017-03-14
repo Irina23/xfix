@@ -1,77 +1,180 @@
 
+mixin itemBread (name, url)
+    li
+        a(href= url )= name
+
+.block_breadcrumbs
+
+        .list_bread
+            ul.inline-layout
+                +itemBread(
+                'Крошки',
+                '#'
+                )
+                +itemBread(
+                'Крошки',
+                '#'
+                )
+                +itemBread(
+                'Крошки',
+                '#'
+                )
+
 form#form-admin
-    .row.inline-layout
-        h2 Название СЦ
+    .row.inline-layout.col-2
+        label(for="name") Название СЦ
         .form-holder
-            input(type="text" placeholder="email")
+            input(type="text" placeholder="Название СЦ" id="name")
+    hr
     .row
         label Фото СЦ
-        .form-holder
+        .list-file.clearfix
+            .form-holder
+                .input-file
+                    input(type="file" name="" id="file1")
+                    label(for="file1")
+                        .fa.fa-plus
+                    .filetext
+                .image-holder
+                    img(src="img/content/noimage.png" alt="" class="fake-img")
+                    div(style="background: url('img/content/noimage.png') no-repeat;background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;" class="img")
 
-            input(type="file" name="")
-        .form-holder
-            input(type="file" name="")
-        .form-holder
-            input(type="file" name="")
-        .form-holder
-            input(type="file" name="")
+            .form-holder
+                .input-file
+                    input(type="file" name="" id="file2")
+                    label(for="file2")
+                        .fa.fa-plus
+                    .filetext
+                .image-holder
+                    img(src="img/content/noimage.png" alt="" class="fake-img")
+                    div(style="background: url('img/content/noimage.png') no-repeat;background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;" class="img")
+
+            .form-holder
+                .input-file
+                    input(type="file" name="" id="file3")
+                    label(for="file3")
+                        .fa.fa-plus
+                    .filetext
+                .image-holder
+                    img(src="img/content/noimage.png" alt="" class="fake-img")
+                    div(style="background: url('img/content/noimage.png') no-repeat;background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;" class="img")
+
+            .form-holder
+                .input-file
+                    input(type="file" name="" id="file4")
+                    label(for="file4")
+                        .fa.fa-plus
+                    .filetext
+                .image-holder
+                    img(src="img/content/noimage.png" alt="" class="fake-img")
+                    div(style="background: url('img/content/noimage.png') no-repeat;background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;" class="img")
+
+    hr
     .row
         #map
-    .row.inline-layout
+    .row.inline-layout.col-3
         .form-holder
             select(name="city" data-validate="select")
-                option(value=""   ) Город
+                option(value="" ) Город
                 option(value="2") option 2
                 option(value="3") option 3
         .form-holder
             select(name="region" data-validate="select")
-                option(value=""   ) Район
+                option(value="") Район
                 option(value="2") option 2
                 option(value="3") option 3
         .form-holder
             select(name="metro" data-validate="select")
-                option(value="" ) Метро
+                option(value="") Метро
                 option(value="2") option 2
                 option(value="3") option 3
-    .row.inline-layout
+    .row.inline-layout.col-3
         .form-holder
             input(placeholder="Улица" type="text")
         .form-holder
             input(placeholder="Дом" type="text")
-        input(type="submit" value="Найти на карте")
+        .form-holder
+            input(type="submit" value="Найти на карте")
 
     .row
-        label Дополнительная информация о СЦ
-        textarea
+        label(for="mini-desc") Дополнительная информация о СЦ
+        .form-holder.wifth100
+            textarea#mini-desc.mini
     .row
-        label Описание СЦ (СЕО текст)
-        textarea
+        label(for="full-desc") Описание СЦ (СЕО текст)
+        .form-holder.wifth100
+            textarea#full-desc
     .row
-        label Поле
-        input(type="text")
+        label(for="phones") Телефоны сервисного центра
+        .form-holder
+            input(type="text" id="phones")
+
     .row
-        label Время работы
-        lable Понедельник - пятница
-        .inline-layout
-            label C
-            .form-holder
-                input(type="text")
-            label C
+        h4 Время работы
+        label Понедельник - пятница
+        .inline-layout.col-2
+            .date.inline-layout
+                label C
                 .form-holder
                     input(type="text")
-        lable Субота
-        .inline-layout
-            label C
-            .form-holder
-                input(type="text")
-            label C
+            .date.inline-layout
+                label по
                 .form-holder
                     input(type="text")
-        lable Воскресение
-        .inline-layout
-            label C
-            .form-holder
-                input(type="text")
-            label C
+    .row
+        .inline-layout.widthauto
+            label Субота
+            .checkbox.form-holder
+                input(type="checkbox" id="work1")
+                label(for="work1") Работаем в суботу
+    .row
+        .inline-layout.col-2
+            .date.inline-layout
+                label C
                 .form-holder
                     input(type="text")
+            .date.inline-layout
+                label по
+                .form-holder
+                    input(type="text")
+    .row
+        .inline-layout.widthauto
+            label Воскресение
+            .checkbox.form-holder
+                input(type="checkbox" id="work2")
+                label(for="work2") Работаем в воскресение
+    .row
+        .inline-layout.col-2
+            .date.inline-layout
+                label C
+                .form-holder
+                    input(type="text")
+            .date.inline-layout
+                label по
+                .form-holder
+                    input(type="text")
+    .row
+        .checkbox.form-holder
+            input(type="checkbox" id="work3")
+            label(for="work3") Круглосуточно
+
+
+    .block_contact
+        h4 Контактное лицо
+        .row.inline-layout
+            label(for="fio") ФИО
+            .form-holder
+                input(type="text" id="fio")
+        .row.inline-layout
+            label(for="position") Должность
+            .form-holder
+                input(type="text" id="position")
+        .row.inline-layout
+            label(for="phone") Телефон
+            .form-holder
+                input(type="text" id="phone")
+        .row.inline-layout
+            label(for="email") E-mail
+            .form-holder
+                input(type="text" id="email")
+    button Сохранить
