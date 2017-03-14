@@ -138,10 +138,17 @@ $(document).ready( function () {
 	});
 
 
-	//jQuery("input[type=file]").after('<span class="filetext"></span>');
+	//jQuery("input[type=file]").next().after('<span class="filetext"></span>');
 	jQuery('input[type=file]').bind('change', function() {
 		var fl = (this.files[0]);
-		jQuery(this).next().next().text(fl.name);
+		if(jQuery(this).next().next().hasClass('filetext')){
+			jQuery(this).next().next().text(fl.name);
+			console.log('text');
+		} else{
+			console.log('add');
+			jQuery(this).next().after('<span class="filetext">'+fl.name+'</span>');
+		}
+
 	});
 
 });
